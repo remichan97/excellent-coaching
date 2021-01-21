@@ -6,9 +6,10 @@
 # Bắt đầu làm việc với code
 Dưới đây là hướng dẫn để bắt đầu làm việc với bộ code ở đây:
 
-1. Download [Git](https://git-scm.com/)
-2. Download [VSCode](https://code.visualstudio.com/) (mặc dù có thể dùng các text editor khác cũng được, nhưng mình khuyên dùng **VSCode** hơn vì nó đã có sẵn hỗ trợ cho Git, tránh mất thời gian thiết lập.)
-3. Sau khi đã cài các phần mềm trên, bạn tiến hành clone (tạo bản sao nội bộ để lưu trong máy tính cá nhân), các bước như sau:
+1. Download và cài đặt [Git](https://git-scm.com/)
+2. Tạo một account [GitHub](https://github.com/), sau đó vui lòng nhắn tin account name GitHub để được add vào repo private của nhóm
+3. Download [VSCode](https://code.visualstudio.com/) (mặc dù có thể dùng các text editor khác cũng được, nhưng mình khuyên dùng **VSCode** hơn vì nó đã có sẵn hỗ trợ cho Git, tránh mất thời gian thiết lập.)
+4. Sau khi đã cài các phần mềm trên, bạn tiến hành clone (tạo bản sao nội bộ để lưu trong máy tính cá nhân), các bước như sau:
 	
 	Nhấn nút code, sau đó copy url của repo:
 
@@ -31,7 +32,7 @@ Dưới đây là hướng dẫn để bắt đầu làm việc với bộ code 
 	![Mở code](assets/images/Screenshot%202021-01-21%20003025.png)
 
 	Vậy là xong, bạn đã ở trong repo code của nhóm!
-4. Chuyển nhánh, viết code và đẩy lên repo của nhóm:
+5. Chuyển nhánh, viết code và đẩy lên repo của nhóm:
 
 	Vậy là bạn đã ở trong repo rồi, việc tiếp theo là viết code và đẩy lên repo, đầu tiên, sau khi các bạn đã clone được repo của nhóm, bạn cần chuyển sang nhánh **dev**, như đã nói ở trên, toàn bộ việc code sẽ được thực hiện ở nhánh **dev** của repo này.
 
