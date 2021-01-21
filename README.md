@@ -55,4 +55,6 @@ Dưới đây là hướng dẫn để bắt đầu làm việc với bộ code 
 	
 	*Lưu ý*: Khi viết Message để commit, phiền bạn hãy ghi chi tiết trong commit đó bạn đã làm gì, thay đổi ở đâu, nếu có thể thì để lại comment trong code, việc này sẽ giúp mọi người có thể theo dõi tiến độ dễ dàng hơn.
 
-	Sau khi đã Commit, bạn có thể đẩy code lên github, 
+	Sau khi đã Commit, bạn có thể đẩy code lên github, cách đẩy code như sau:
+
+	Sau khi đã thực hiện Commit, VSCode sẽ hiển thị một trạng thái chờ push ở goc trái Status Bar ![Push](assets/images/Screenshot%202021-01-21%20102424.png), bạn nhấn nút Sync ở đó để đẩy code lên, đồng thời những thay đổi trong code đều sẽ được lấy xuống để tất cả thành viên đều có chung một bộ code hoàn chỉnh ở thời điểm đó.
