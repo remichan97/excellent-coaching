@@ -18,7 +18,7 @@ Dưới đây là hướng dẫn để bắt đầu làm việc với bộ code 
 
 	![Tiến hành clone trong VSCode](assets/images/Screenshot%202021-01-21%20002543.png)
 
-	Paste code repo đã copy ở trên vào rồi nhấn Enter:
+	Paste link repo đã copy ở trên vào rồi nhấn Enter:
 
 	![Bắt đầu](assets/images/Screenshot%202021-01-21%20002746.png)
 
@@ -30,5 +30,29 @@ Dưới đây là hướng dẫn để bắt đầu làm việc với bộ code 
 
 	![Mở code](assets/images/Screenshot%202021-01-21%20003025.png)
 
-	Vậy là xong, bạn đã ở trong repo code của nhóm rồi!
-4. 
+	Vậy là xong, bạn đã ở trong repo code của nhóm!
+4. Chuyển nhánh, viết code và đẩy lên repo của nhóm:
+
+	Vậy là bạn đã ở trong repo rồi, việc tiếp theo là viết code và đẩy lên repo, đầu tiên, sau khi các bạn đã clone được repo của nhóm, bạn cần chuyển sang nhánh **dev**, như đã nói ở trên, toàn bộ việc code sẽ được thực hiện ở nhánh **dev** của repo này.
+
+	Việc chuyển nhánh như sau:
+
+	Ở góc trái Status Bar, nhấn vào icon git:
+
+	![branch](assets/images/Screenshot%202021-01-21%20100708.png)
+
+	Sau đó chọn sang nhánh **dev**:
+
+	![switch](assets/images/Screenshot%202021-01-21%20100808.png)
+
+	Vậy là xong, từ đây bạn sẽ tạo file, viết code như thường lệ, chỉ có điều là giờ sẽ bổ sung thêm một bước nữa đó là đẩy lên repo của nhóm thôi, cách đẩy code như sau:
+
+	Khi có các thay đổi trong repo đã clone, VSCode sẽ nháy một thông báo ở phần Source Control ![sc](assets/images/Screenshot%202021-01-21%20101052.png), nhấn vào đó, bạn sẽ nhìn thấy các file đã thay đổi trong code của mình:
+
+	![commit](assets/images/Screenshot%202021-01-21%20101151.png)
+
+	Để lưu các thay đổi này lên git, bạn sẽ cần thực hiện việc **Commit**, việc này để cho git ghi nhận thay đổi của bạn, và để chuẩn bị cho bước tiếp theo là **Push** (đẩy code lên github của nhóm), ở đây bạn nhấn vào ô Message và nhập vào đó thông tin của lần **Commit** này rồi nhấn tổ hợp phím `Ctrl + Enter` hoặc nhấn nút tick ở thanh công cụ.
+	
+	*Lưu ý*: Khi viết Message để commit, phiền bạn hãy ghi chi tiết trong commit đó bạn đã làm gì, thay đổi ở đâu, nếu có thể thì để lại comment trong code, việc này sẽ giúp mọi người có thể theo dõi tiến độ dễ dàng hơn.
+
+	Sau khi đã Commit, bạn có thể đẩy code lên github, 
