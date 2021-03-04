@@ -8,7 +8,7 @@
 			<?php $sc = mysqli_query($conn, $sqc) ?>
 			<ul class="list-group sub-item">
 				<?php foreach ($sc as $i) : ?>
-				<li class="list-group-item"><span><a href="./courseinfo/?courseID=<?= $i['cID']?>"><?= $i['cName'] ?></a></span></li>
+				<li class="list-group-item"><span><a href="?request=detail&courseID=<?= $i['cID']?>"><?= $i['cName'] ?></a></span></li>
 			<?php endforeach; ?>
 			</ul>
 		<?php endwhile; ?>
