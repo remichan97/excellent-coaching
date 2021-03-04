@@ -306,3 +306,7 @@ a:hover {
 .footer-basic {
   z-index: 100;
 }
+
+.tag_academy_row.col:after .tag_academy_row.col:before {
+}
+
