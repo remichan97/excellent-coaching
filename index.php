@@ -1,6 +1,6 @@
 <?php
-	include "./model/database.php";
-	$c = mysqli_query($conn,"select distinct a.catID, catName from course a join category b on a.catID = b.catID");
+include "./model/database.php";
+$c = mysqli_query($conn, "select distinct a.catID, catName from course a join category b on a.catID = b.catID");
 ?>
 
 <!DOCTYPE html>
@@ -19,9 +19,14 @@
     <link rel="stylesheet" href="assets/css/project-1.css">
     <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
 </head>
+
 <body class="home">
-        <?php include "./layout/body.php"?>
-        <?php include "./layout/footer.php"?>
+    <section class="site-wrapper">
+        <?php include "./layout/header.php" ?>
+        <?php include "./layout/body.php" ?>
+        <?php include "./layout/footer.php" ?>
+        <?php include "./layout/background.php" ?>
+    </section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>

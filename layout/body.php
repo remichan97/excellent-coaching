@@ -5,9 +5,11 @@
         break;
         case 'home':
             include "./view/home.php";
-            break;
+        break;
+        case 'contact':
+            include "./view/contact.php";
+        break;
     }
 } else {
     include "./view/home.php";
 }
-?>

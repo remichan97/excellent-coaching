@@ -1,21 +1,14 @@
-<?php if (isset($_GET['courseID'])) : ?>
-	<?php
-	$id = $_GET['courseID'];
-	$des = "select name,cName,price,a.description from course a join teacher b on a.teacher = b.id where cID='$id'";
-	$detail = mysqli_query($conn, $des);
-	$d = mysqli_fetch_array($detail)
-	?>
-<?php endif; ?>
+<?php include "./controller/showinfo.php" ?>
 
-<section class="site-wrapper">
-	<header class="main_header">
-		<div class="inner_header">
-			<div class="top_nav">
-				<div class="logo"><a data-aos="fade-up" data-aos-duration="250" data-aos-once="true" href="#">LOGO</a></div>
+<div class="content_academy_wrap">
+	<div class="content_academy_inner">
+		<div class="courseInfo">
+			<h3><?= $d['cName'] ?></h3>
+			<?php include "./view/courseIaN.php" ?>
+			<div class="courseInfo">
+				<?= $d['description'] ?>
 			</div>
+			<?php include "./view/registerform.php" ?>
 		</div>
-	</header>
-	<div class="description">
-		<?=$d['description']?>
 	</div>
-</section>
+</div>
