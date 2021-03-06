@@ -1,5 +1,5 @@
 <?php include "./controller/showinfo.php" ?>
-
+<?php include "./view/registerstatus.php"?>
 <div class="content_academy_wrap">
 	<div class="content_academy_inner">
 		<div class="courseInfo">
