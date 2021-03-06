@@ -8,9 +8,18 @@
 			$address = $_POST['address'];
 			$centre = $_POST['centre'];
 			$ref = $_POST['ref'];
-			$add = "insert into register (name,email,cID,addID,ref) values ('$name','$email','$id','$centre','$ref')";
-			$rs = mysqli_query($conn,$add);
-			include "./model/confirmmail.php";
+			$duplicate = "select*from register where name = '$name' and email='$email' and cID = '$id'";
+			$dup = mysqli_query($conn,$duplicate);
+			if (mysqli_num_rows($dup) == 1) {
+				unset($_SESSION['reg']);
+				$_SESSION['duplicate'] = true;
+				header("Location: ".$_SERVER['REQUEST_URI']);
+			} else {
+				$add = "insert into register (name,email,cID,addID,ref) values ('$name','$email','$id','$centre','$ref')";
+				$rs = mysqli_query($conn,$add);
+				include "./model/confirmmail.php";
+			}
+			
 		} else {
 			unset($_SESSION['reg']);
 			$_SESSION['invalidemail'] = true;
