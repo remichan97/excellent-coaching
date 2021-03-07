@@ -9,6 +9,9 @@
         case 'contact':
             include "./view/contact.php";
         break;
+        case 'people':
+            include "./view/people.php";
+        break;
     }
 } else {
     include "./view/home.php";
