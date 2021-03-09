@@ -12,8 +12,8 @@
 				$body.="Bạn biết đến chúng tôi thông qua ".$ref."\r\n";
 				$body.="\nChúng tôi sẽ thông báo cho bạn thời gian bạn cần đến trung tâm để hoàn tất hố sơ trong 24 giờ tới!\n";
 				$header = array(
-					"From: Excellent Coaching Vietnam <excellentcoachingvn@gmail.com>",
-					"Content-Type: text/plain;charset=utf-8"
+					"From: Excellent Coaching Vietnam <excellentcoachingvn@gmail.com>", //phải có nếu không mớ phía dưới không gửi được mail
+					"Content-Type: text/plain;charset=utf-8" //phải có nếu không email client (Outlook, Thunderbird..) sẽ không hiển thị được tiếng Việt
 				);
 				mail($email,$subject,$body,implode("\r\n",$header));
 				unset($_SESSION['reg']);
