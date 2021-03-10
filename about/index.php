@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>site</title>
+    <title>Giới thiệu về chúng tôi - Excellent Coaching Vietnam</title>
     <link rel="stylesheet" href="../assets/subsite/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/subsite/fonts/ionicons.min.css">
     <link rel="stylesheet" href="../assets/subsite/css/Contact-Form-Clean.css">
@@ -14,13 +14,7 @@
 </head>
 
 <body>
-    <div class="main_header">
-        <div class="inner_header">
-            <div class="top_nav">
-                <div class="logo"><a data-aos="fade-up" data-aos-duration="250" data-aos-once="true" href="#">LOGO</a></div>
-            </div>
-        </div>
-    </div>
+	<?php include "../layout/header.php"?>
     <section class="content_academy_wrap">
         <div class="content_academy_inner">
             <header class="title_form">
