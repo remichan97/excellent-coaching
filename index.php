@@ -17,6 +17,19 @@ $c = mysqli_query($conn, "select distinct a.catID, catName from course a join ca
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/project-1.css">
+    <script>
+    var xmlhttp;
+    function getSearch(a){
+      xmlhttp=GetXmlHttpObject();
+      null==xmlhttp?alert("Trình duyệt không hỗ trợ HTTP Request"):(xmlhttp.onreadystatechange=stateChanged,xmlhttp.open("GET","getData.php?key="+a,!0),xmlhttp.send(null))
+    }
+    function stateChanged(){
+      4==xmlhttp.readyState&&(document.getElementById("result").innerHTML=xmlhttp.responseText)
+    }
+    function GetXmlHttpObject(){
+      return window.XMLHttpRequest?new XMLHttpRequest:window.ActiveXObject?new ActiveXObject("Microsoft.XMLHTTP"):null
+    }
+  </script>
 </head>
 
 <body class="home">
