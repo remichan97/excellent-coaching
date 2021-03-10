@@ -17,7 +17,6 @@ $c = mysqli_query($conn, "select distinct a.catID, catName from course a join ca
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/project-1.css">
-    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
 </head>
 
 <body class="home">
