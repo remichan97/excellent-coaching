@@ -74,6 +74,9 @@
   width: 47%;
   float: left;
   margin-right: 6%;
+  padding: 10px 0;
+  display: block;
+  float: left;
 }
 
 .row_search {
@@ -81,6 +84,9 @@
   float: left;
   width: 38%;
   margin-left: 9%;
+  padding: 10px 0;
+  display: block;
+  float: left;
 }
 
 .search_button {
@@ -148,10 +154,10 @@ h3 {
   display: block;
 }
 
+@media (max-width: 819px){
 .col {
-  padding: 10px 0;
-  display: block;
-  float: left;
+  width: 100%;
+  } 
 }
 
 .row_text {
