@@ -3,9 +3,6 @@
         case 'detail':
             include "./view/coursedetail.php";
         break;
-        case 'home':
-            include "./view/home.php";
-        break;
         case 'contact':
             include "./view/contact.php";
         break;
