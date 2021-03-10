@@ -1,6 +1,6 @@
-<?php include "../model/database.php"?>
+<?php session_start()?>
+<?php include "../model/database.php" ?>
 <?php include "../controller/showinfo.php" ?>
-<?php include "../view/registerstatus.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title>site</title>
+	<title><?= $d['cName'] ?> - Excellent Coaching Vietnam</title>
 	<link rel="stylesheet" href="../assets/subsite/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/subsite/fonts/ionicons.min.css">
 	<link rel="stylesheet" href="../assets/subsite/css/Contact-Form-Clean.css">
@@ -18,28 +18,30 @@
 </head>
 
 <body>
-	<?php include "../layout/header.php"?>
+	<?php include "../layout/header.php" ?>
 	</div>
 	<section class="content_academy_wrap">
 		<div class="content_academy_inner">
+			<div class="status">
+			<?php include "../view/registerstatus.php" ?>
+			</div>
 			<header class="title_form">
 				<div class="col_9 layer">
-					<h1><?=$d['cName']?></h1>
+					<h1><?= $d['cName'] ?></h1>
 				</div>
 				<div class="col_3">
 					<h4>Thông tin khóa học</h4>
 				</div>
 				<section class="description_form">
 					<div class="col_9">
-						<?=$d['description']?>
+						<?= $d['description'] ?>
 					</div>
 					<div class="col_3">
 						<div class="list_lecturers">
 							<ul class="top_list">
-								<li>Giảng viên: <?=$d['name']?></li>
-								<li>Thời lượng khóa học: <?=$d['duration']?> tháng</li>
-								<li>Học phí: </li>
-								<li>Item 4</li>
+								<li>Giảng viên: <?= $d['name'] ?></li>
+								<li>Thời lượng khóa học: <?= $d['duration'] ?> tháng</li>
+								<li>Học phí: <?= number_format($d['price'], 0, ',', '.') ?> đồng</li>
 							</ul>
 						</div>
 					</div>
@@ -50,7 +52,7 @@
 	<section class="content_empty_wrap">
 		<div class="content_academy_inner">
 			<section class="contact-clean">
-				<?php include "../view/registerform.php"?>
+				<?php include "../view/registerform.php" ?>
 			</section>
 		</div>
 		<?php include "../layout/footer.php" ?>

@@ -17,7 +17,7 @@
 			} else {
 				$add = "insert into register (name,email,cID,addID,ref) values ('$name','$email','$id','$centre','$ref')";
 				$rs = mysqli_query($conn,$add);
-				include "./model/confirmmail.php";
+				include "../model/confirmmail.php";
 			}
 			
 		} else {
