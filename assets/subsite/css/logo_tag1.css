@@ -1,0 +1,162 @@
+.main_header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.top_nav {
+  position: relative;
+  margin: 40px 80px 0;
+}
+
+@media (min-width: 668px) {
+  .logo {
+    font-size: 8vw;
+  }
+}
+
+.logo > a {
+  background: rgba(0,0,0,0.9);
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 0px 7px;
+  color: rgba(255,255,255,0.9);
+  font-size: 25px;
+}
+
+.logo > a:hover {
+  color: rgba(0,0,0,0.5);
+  text-decoration: none;
+}
+
+.inner_header {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1360px;
+}
+
+ul, li, div, p {
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+@media (min-width: 820px) {
+  .logo {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    font-size: 2vw;
+  }
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content_academy_wrap {
+  position: relative;
+  padding: 200px 80px 80px 80px;
+  width: 100%;
+  display: block;
+}
+
+.content_academy_inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title_form:after, .title_form:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.col_9 {
+  width: 72.5%;
+  padding: 10px 0;
+  display: block;
+  float: left;
+  margin-right: 5%;
+}
+
+.col_3 {
+  padding: 10px 0;
+  width: 22.5%;
+  float: left;
+  display: block;
+}
+
+.description_form:after, .description_form:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.list_lecturers {
+  background-color: #e6e6e6;
+  padding: 20px 0;
+}
+
+@media (max-width: 819px) {
+  .col_9, .col_3 {
+    width: 100% !important;
+  }
+}
+
+.layer {
+  background-color: #e6e6e6;
+}
+
+.top_list {
+  list-style: none;
+}
+
+.content_empty_wrap {
+  position: relative;
+  padding: 80px 80px 200px 80px;
+  display: block;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+
+.row_address {
+  width: 100%;
+  margin: 35px 0;
+}
+
+.col_name {
+  width: 47.5%;
+  display: block;
+  float: left;
+  margin-right: 5%;
+}
+
+.col_email {
+  width: 47.5%;
+  display: block;
+  float: left;
+}
+
+.row_address:after, .row_address:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 819px) {
+  .col_name, .col_email {
+    width: 100% !important;
+    margin: 20px 0;
+  }
+}
+
