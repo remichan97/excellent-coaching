@@ -15,7 +15,7 @@
 			unset($_SESSION['log']);
 			//thành công, chuyển người dùng sang trang admin
 			$_SESSION['user'] = $user;
-			header("Location: ". "/cpanel");
+			header("Location: ". "/admin/cpanel");
 		}
 		exit();
 	}

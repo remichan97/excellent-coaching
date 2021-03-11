@@ -2,6 +2,7 @@
     session_start();
 }
 ?>
+<?php if(!isset($_SESSION['user'])):?>
 <?php include "../admin/loginprocedure.php" ?>
 
 <!DOCTYPE html>
@@ -38,3 +39,6 @@
 </body>
 
 </html>
+<?php else:?>
+<?php header("Location: " . "../admin/cpanel")?>
+<?php endif;?>
