@@ -2,7 +2,7 @@
     session_start();
 }
 ?>
-<?php if(!isset($_SESSION['user'])):?>
+<?php if(!isset($_SESSION['user'])): //chỉ hiển thị form login nếu trc đó chưa có ai đăng nhập vào?> 
 <?php include "../admin/loginprocedure.php" ?>
 
 <!DOCTYPE html>
@@ -40,5 +40,5 @@
 
 </html>
 <?php else:?>
-<?php header("Location: " . "../admin/cpanel")?>
+<?php header("Location: " . "../admin/cpanel") //nếu có ai đăng nhập rồi thì chuyển hướng sang trang admin luôn, không đăng nhập nữa?>
 <?php endif;?>

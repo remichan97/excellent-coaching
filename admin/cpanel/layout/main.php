@@ -5,6 +5,12 @@
 				unset($_SESSION['user']);
 				header("Location: ". "../");
 				break;
+			case 'feedback':
+				include "../cpanel/view/feedback.php";
+				break;
+			case 'reply':
+				include "../cpanel/view/reply.php";
+				break;
 			
 			default:
 				# code...
