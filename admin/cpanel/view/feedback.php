@@ -6,9 +6,9 @@ $fb = mysqli_query($conn, $f);
 
 <div class="feedback">
 	<h3>Phản hồi khách hàng</h3>
-	<?php if(isset($_SESSION['sent']) && $_SESSION['sent'] == true):?>
+	<?php if(isset($_SESSION['sent']) && $_SESSION['sent'] == true): //thông báo thành công cho người dùng?> 
 		<div class="alert alert-success">Phản hồi của bạn đã được gửi thành công!</div>
-		<?php unset($_SESSION['sent'])?>
+		<?php unset($_SESSION['sent']) //và sau đó quên luôn là nó đã từng xảy ra?>
 	<?php endif;?>
 	<table class="table table-bordered">
 		<thead class="thead-light">

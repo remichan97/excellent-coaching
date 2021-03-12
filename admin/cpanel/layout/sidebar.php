@@ -1,4 +1,4 @@
-<aside class="col-md-3">
+<aside class="col-md-2">
 	<p class="menu-item"><a href="?request=home"><img src="https://img.icons8.com/fluent/24/000000/home.png"/> Trang chính</a></p>
 	<p class="menu-item"><a href="?request=category"><img src="https://img.icons8.com/fluent/24/000000/opened-folder.png"/> Quản lý danh mục</a></p>
 	<p class="menu-item"><a href="?request=course"><img src="https://img.icons8.com/fluent/24/000000/file.png"/> Quản lý khóa học</a></p>
