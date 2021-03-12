@@ -1,3 +1,4 @@
+<article class="col-md-9">
 <?php
 	if (isset($_GET['request'])) {
 		switch ($_GET['request']) {
@@ -18,3 +19,4 @@
 		}
 	}
 ?>
+</article>
