@@ -1,9 +1,12 @@
-<?php
-include "../cpanel/model/database.php";
-$a = "select id,name,email,cName,addID,ref,regDate,date from register a join course b on a.cID = b.cID";
-$ap = mysqli_query($conn, $a);
-?>
+<?php include "../cpanel/controller/apquery.php"?>
 
+<?php if(isset($_SESSION['invited']) && $_SESSION['invited'] == true):?>
+	<div class="alert alert-success">Đã gửi lịch hẹn cho học viên thành công!</div>
+	<?php unset($_SESSION['invited'])?>
+	<?php elseif(isset($_SESSION['changed']) && $_SESSION['changed'] == true):?>
+	<div class="alert alert-success">Đã thay đổi lịch hẹn cho học viên thành công!</div>
+	<?php unset($_SESSION['changed'])?>
+<?php endif;?>
 <div class="appointment">
 	<h3>Đặt lịch hẹn cho học viên</h3>
 	<table class="table table-bordered">
@@ -31,8 +34,14 @@ $ap = mysqli_query($conn, $a);
 						<td><?=$item['regDate']?></td>
 						<?php if($item['date'] == "0000-00-00 00:00:00"):?>
 							<td>Chưa đặt lịch hẹn</td>
+							<?php else:?>
+							<td><?=$item['date']?></td>
 						<?php endif;?>
-						<td><a href="?request=setAppoint" class="btn btn-primary">Đặt lịch hẹn</a></td>
+						<?php if($item['date'] == "0000-00-00"):?>
+							<td><a href="?request=setAppoint&id=<?=$item['id']?>" class="btn btn-primary">Đặt lịch hẹn</a></td>
+							<?php else:?>
+							<td><a href="?request=changeAppoint&id=<?=$item['id']?>" class="btn btn-primary">Thay đổi lịch hẹn</a></td>
+						<?php endif;?>
 					</tr>
 				<?php endforeach;?>
 			</tbody>

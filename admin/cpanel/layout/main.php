@@ -18,6 +18,9 @@
 			case 'setAppoint':
 				include "../cpanel/view/setAppoint.php";
 			break;
+			case 'changeAppoint':
+				include "../cpanel/view/setAppoint.php";
+			break;
 			default:
 				# code...
 				break;
