@@ -1,13 +1,19 @@
 <?php
 	include "../cpanel/model/database.php";
 	if(isset($_GET['id'])){
-	$sql = "select email from feedback where id = ".$_GET['id'];
+		$id = $_GET['id'];
+	$sql = "select email from feedback where id = ".$id;
 	$q = mysqli_query($conn,$sql);
 	$q = mysqli_fetch_array($q);
 }
 ?>
+
+<?php include "../cpanel/controller/replymessage.php"?>
 <div class="reply">
 <h1>Gửi phản hồi</h1>
+<?php if(isset($_SESSION['failed']) && $_SESSION['failed'] == true):?>
+	<div class="alert alert-danger">Xin lỗi, đã có lỗi xảy ra, vui lòng thử lại trong giây lát</div>
+<?php endif;?>
 <script src="../cpanel/ckeditor/ckeditor.js"></script>
 	<form method="post">
 		<div class="form-row">

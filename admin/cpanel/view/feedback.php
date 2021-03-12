@@ -2,11 +2,14 @@
 include "../cpanel/model/database.php";
 $f = "select*from feedback";
 $fb = mysqli_query($conn, $f);
-
 ?>
 
 <div class="feedback">
 	<h3>Phản hồi khách hàng</h3>
+	<?php if(isset($_SESSION['sent']) && $_SESSION['sent'] == true):?>
+		<div class="alert alert-success">Phản hồi của bạn đã được gửi thành công!</div>
+		<?php unset($_SESSION['sent'])?>
+	<?php endif;?>
 	<table class="table table-bordered">
 		<thead class="thead-light">
 			<tr>
