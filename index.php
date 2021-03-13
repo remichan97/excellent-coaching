@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "./model/database.php";
-$c = mysqli_query($conn, "select distinct a.catID, catName from course a join category b on a.catID = b.catID");
+$c = mysqli_query($conn, "select distinct a.catID, catName from course a join category b on a.catID = b.catID where status");
 ?>
 
 <!DOCTYPE html>

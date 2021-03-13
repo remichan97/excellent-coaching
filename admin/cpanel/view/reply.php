@@ -14,7 +14,6 @@
 <?php if(isset($_SESSION['failed']) && $_SESSION['failed'] == true):?>
 	<div class="alert alert-danger">Xin lỗi, đã có lỗi xảy ra, vui lòng thử lại trong giây lát</div>
 <?php endif;?>
-<script src="../cpanel/ckeditor/ckeditor.js"></script>
 	<form method="post">
 		<div class="form-row">
 			<div class="form-group col-md-6">
@@ -32,6 +31,7 @@
 				<script>CKEDITOR.replace('msg')</script>
 			</div>
 			<button type="submit" name="send" class="btn btn-primary">Gửi phản hồi</button>
+			<a href="?request=feedback" class="btn btn-light">Trở về</a>
 		</div>
 	</form>
 </div>

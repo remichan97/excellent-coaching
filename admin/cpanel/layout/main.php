@@ -24,6 +24,12 @@
 			case 'teacher':
 				include "../cpanel/view/teacher.php";
 			break;
+			case 'updateTeacher':
+				include "../cpanel/view/updateTeacher.php";
+			break;
+			case 'addTeacher':
+				include "../cpanel/view/addTeacher.php";
+			break;
 			default:
 				# code...
 				break;

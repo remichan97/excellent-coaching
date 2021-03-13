@@ -27,7 +27,8 @@ if (isset($_GET['id'])) {
 			<div class="form-group mx-sm-3 mb-2">
 				<input type="date" name="date" class="form-control" required>
 			</div>
-			<button type="submit" name='set' class="btn btn-primary mb-2">Đặt lịch</button>
+			<button type="submit" name='set' class="btn btn-primary mb-2">Đặt lịch</button> 
+			<a href="?request=appointment" class="btn btn-light mb-2">Trở về</a>
 		</form>
 	<?php else : ?>
 		<p>Học viên hiện đã được đặt lịch hẹn đến trung tâm vào ngày <?= date('d', strtotime($q['date'])) ?> tháng <?= date('m', strtotime($q['date'])) ?> năm <?= date('Y', strtotime($q['date'])) ?></p>
@@ -37,6 +38,7 @@ if (isset($_GET['id'])) {
 				<input type="date" name="date" class="form-control" required>
 			</div>
 			<button type="submit" name='change' class="btn btn-primary mb-2">Thay đổi lịch</button>
+			<a href="?request=appointment" class="btn btn-light mb-2">Trở về</a>
 		</form>
 	<?php endif; ?>
 </div>

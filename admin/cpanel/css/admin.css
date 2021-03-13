@@ -25,3 +25,22 @@ footer>p {
 	text-align: center;
 	color: white;
 }
+
+.add {
+	text-align: center;
+}
+
+.image {
+    width: 150px;
+    height: 120px;
+}
+
+.image>img {
+    width: 100%;
+    height: auto;
+}
+
+.col-md-7>img {
+    width: 25%;
+    height: auto;
+}

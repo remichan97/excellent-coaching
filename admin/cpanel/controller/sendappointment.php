@@ -41,7 +41,7 @@
 			$m = date('m',$datetime);
 			$y = date('y',$datetime);
 			$email = $q['email'];
-			$subject = "Hẹn học viên đến hoàn tất hồ sơ đăng ký khóa học";
+			$subject = "Thay đổi thời gian học viên đến hoàn tất hồ sơ đăng ký khóa học";
 			$body = "Dear ".$q['name'].",\n";
 			$body .= "Cảm ơn bạn đã đăng ký tham gia khóa học ".$q['cName']."!\n";
 			$body .= "Vì một số lý do ngoài mong muốn, nên để hoàn tất hồ sơ đăng ký khóa học, mời bạn đến ".$q['addID']." của Excellent Coaching Vietnam vào ngày ".$d. " tháng ".$m." năm ".$y."\n" ;
