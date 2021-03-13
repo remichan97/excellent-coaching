@@ -1,10 +1,10 @@
 <article class="col-md-10">
-<?php
+	<?php
 	if (isset($_GET['request'])) {
 		switch ($_GET['request']) {
 			case 'logout':
 				unset($_SESSION['user']);
-				header("Location: ". "../");
+				header("Location: " . "../");
 				break;
 			case 'feedback':
 				include "../cpanel/view/feedback.php";
@@ -14,29 +14,31 @@
 				break;
 			case 'appointment':
 				include "../cpanel/view/appointment.php";
-			break;
+				break;
 			case 'setAppoint':
 				include "../cpanel/view/setAppoint.php";
-			break;
+				break;
 			case 'changeAppoint':
 				include "../cpanel/view/setAppoint.php";
-			break;
+				break;
 			case 'teacher':
 				include "../cpanel/view/teacher.php";
-			break;
+				break;
 			case 'updateTeacher':
 				include "../cpanel/view/updateTeacher.php";
-			break;
+				break;
 			case 'addTeacher':
 				include "../cpanel/view/addTeacher.php";
-			break;
+				break;
 			case 'deleteTeacher':
 				include "../cpanel/controller/deleteTeacher.php";
-			break;
-			default:
-				include "../cpanel/view/home.php";	
-			break;
+				break;
+			case 'home':
+				include "../cpanel/view/home.php";
+				break;
 		}
+	} else {
+		include "../cpanel/view/home.php";
 	}
-?>
+	?>
 </article>
