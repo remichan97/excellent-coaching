@@ -31,14 +31,16 @@
 						<td><?=$item['cName']?></td>
 						<td><?=$item['addID']?></td>
 						<td><?=$item['ref']?></td>
-						<td><?=$item['regDate']?></td>
+						<td><?=date_format(date_create($item['regDate']),"d/m/Y")?></td>
 						<?php if($item['date'] == "0000-00-00 00:00:00"):?>
 							<td>Chưa đặt lịch hẹn</td>
 							<?php else:?>
-							<td><?=$item['date']?></td>
+							<td><?=date_format(date_create($item['date']),"d/m/Y")?></td>
 						<?php endif;?>
 						<?php if($item['date'] == "0000-00-00"):?>
 							<td><a href="?request=setAppoint&id=<?=$item['id']?>" class="btn btn-primary">Đặt lịch hẹn</a></td>
+							<?php elseif(strtotime($item['date']) === strtotime(date("Y-m-d"))):?>
+								<td>&nbsp;</td>
 							<?php else:?>
 							<td><a href="?request=changeAppoint&id=<?=$item['id']?>" class="btn btn-primary">Thay đổi lịch hẹn</a></td>
 						<?php endif;?>

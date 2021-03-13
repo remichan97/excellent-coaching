@@ -34,8 +34,8 @@
 				include "../cpanel/controller/deleteTeacher.php";
 			break;
 			default:
-				# code...
-				break;
+				include "../cpanel/view/home.php";	
+			break;
 		}
 	}
 ?>
