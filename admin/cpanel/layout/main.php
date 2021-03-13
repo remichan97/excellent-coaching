@@ -30,6 +30,9 @@
 			case 'addTeacher':
 				include "../cpanel/view/addTeacher.php";
 			break;
+			case 'deleteTeacher':
+				include "../cpanel/controller/deleteTeacher.php";
+			break;
 			default:
 				# code...
 				break;

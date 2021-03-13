@@ -3,6 +3,10 @@
 <div class="teacher">
 	<?php if(isset($_SESSION['added']) && $_SESSION['added'] == true):?>
 		<div class="alert alert-success">Đã thêm thông tin giảng viên</div>
+		<?php unset($_SESSION['added'])?>
+		<?php elseif(isset($_SESSION['completed']) && $_SESSION['completed'] == true):?>
+			<div class="alert alert-success">Đã xóa thông tin giảng viên</div>
+			<?php unset($_SESSION['completed'])?>
 	<?php endif;?>
 	<h3>Danh sách giảng viên</h3>
 	<div class="add">
@@ -25,7 +29,11 @@
 					<?php else : ?>
 						<td>Chưa có ảnh của giảng viên</td>
 					<?php endif; ?>
-					<td><a href="?request=updateTeacher&id=<?= $item['id'] ?>" class="btn btn-primary">Sửa</a></td>
+					<td><a href="?request=updateTeacher&id=<?= $item['id'] ?>" class="btn btn-primary">Sửa</a>
+						<?php if(mysqli_num_rows(mysqli_query($conn,"select*from course where teacher = '$item[id]'")) == 0):?>
+							<a onclick="return confirm('Bạn có chắc muốn xóa giảng viên này?');" href="?request=deleteTeacher&id=<?=$item['id']?>" class="btn btn-danger" onclick="">Xóa<a>
+						<?php endif;?>
+				</td>
 				</tr>
 			<?php endforeach; ?>
 		</tbody>
