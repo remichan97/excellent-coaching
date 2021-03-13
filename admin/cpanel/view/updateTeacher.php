@@ -9,8 +9,15 @@
 
 <?php include "../cpanel/controller/updateTeacher.php"?>
 <div class="updateTeacher">
+	<?php if(isset($_SESSION['invalidFile']) && $_SESSION['invalidFile'] == true):?>
+		<div class="alert alert-danger">File đã chọn không phải file ảnh!</div>
+		<?php unset($_SESSION['invalidFile'])?>
+		<?php elseif(isset($_SESSION['error']) && $_SESSION['error'] == true):?>
+			<div class="alert alert-danger">Đã có lỗi xảy ra, vui lòng thử lại sau</div>
+			<?php unset($_SESSION['error'])?>
+	<?php endif;?>
 	<h3>Sửa thông tin giảng viên</h3>
-	<form method="post">
+	<form method="post" enctype="multipart/form-data">
 		<div class="form-group row">
 		<label for="name" class="col-md-2 col-form-label">Tên giảng viên:</label>
 		<input type="text" name="name" id="name" value="<?=$teacher['name']?>" class="form-control col-md-7">

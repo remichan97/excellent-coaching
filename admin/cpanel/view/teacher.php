@@ -7,6 +7,9 @@
 		<?php elseif(isset($_SESSION['completed']) && $_SESSION['completed'] == true):?>
 			<div class="alert alert-success">Đã xóa thông tin giảng viên</div>
 			<?php unset($_SESSION['completed'])?>
+			<?php elseif(isset($_SESSION['updated']) && $_SESSION['updated'] == true):?>
+				<div class="alert alert-success">Cập nhật thông tin giảng viên thành công</div>
+				<?php unset($_SESSION['updated'])?>
 	<?php endif;?>
 	<h3>Danh sách giảng viên</h3>
 	<div class="add">
@@ -14,7 +17,7 @@
 	</div>
 	<table class="table table-bordered">
 		<thead class="thead thead-light">
-			<th scope="col">STT</th>
+			<th scope="col">ID</th>
 			<th scope="col">Họ và tên giảng viên</th>
 			<th scope="col">Ảnh giảng viên</th>
 			<th scope="col">Thao tác</th>

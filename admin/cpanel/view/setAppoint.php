@@ -15,6 +15,9 @@ if (isset($_GET['id'])) {
 	<?php elseif(isset($_SESSION['dup']) && $_SESSION['dup'] == true):?>
 	<p class="alert alert-danger">Thời gian thay thế trùng với thời gian ban đầu</p>
 	<?php unset($_SESSION['dup'])?>
+	<?php elseif(isset($_SESSION['past']) && $_SESSION['past'] == true):?>
+	<p class="alert alert-danger">Không thể đặt lịch hẹn trước ngày học viên đăng ký</p>
+	<?php unset($_SESSION['past'])?>
 <?php endif;?>
 <div class="appointment">
 	<h3>Đặt lịch hẹn</h3>

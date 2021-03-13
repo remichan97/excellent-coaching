@@ -34,7 +34,11 @@
 		$date = $_POST['date'];
 		if (strtotime($date) === strtotime($q['date'])) {
 			unset($_SESSION['invite']);
-			$_SESSION['dup'] = true;
+			$_SESSION['dup'] = true; //không cho phép đặt trùng lịch trc đó
+			header("Location: ".$_SERVER['REQUEST_URI']);
+		} else if (strtotime($date) < strtotime($q['date'])) {
+			unset($_SESSION['invite']);
+			$_SESSION['past'] = true; //không cho phép đặt lịch hẹn trong quá khứ
 			header("Location: ".$_SERVER['REQUEST_URI']);
 		} else {
 			$datetime = strtotime($date);
@@ -64,6 +68,6 @@
 				header("Location: ".$_SERVER['REQUEST_URI']);
 			}
 		}
-		exit();
+		exit(); //đôi khi tôi tự hỏi tại sao không có cái mắc dịch này thì cái pop-up thông báo cho người dùng không bao giờ hoạt động???
 	}
 ?>
