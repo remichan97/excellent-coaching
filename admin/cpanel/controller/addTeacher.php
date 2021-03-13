@@ -28,8 +28,7 @@
 				unset($_SESSION['addTeacher']);
 				$_SESSION['addFailed'] = true;
 				header("Location: ".$_SERVER['REQUEST_URI']);
-			}
-			
+			}	
 		}
 		exit();
 	}

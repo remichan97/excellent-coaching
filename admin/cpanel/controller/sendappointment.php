@@ -27,6 +27,7 @@
 			$_SESSION['notinvited'] = true;
 			header("Location: ".$_SERVER['REQUEST_URI']);
 		}
+		exit();
 		
 	} else if (isset($_POST['change'])) {
 		$_SESSION['invite'] = $_POST;
@@ -63,5 +64,6 @@
 				header("Location: ".$_SERVER['REQUEST_URI']);
 			}
 		}
+		exit();
 	}
 ?>
