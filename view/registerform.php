@@ -18,7 +18,7 @@
 		</div>
 		<div class="col-12">
 			<label for="address" class="form-label">Địa chỉ: </label>
-			<input type="text" name="a" id="address" class="form-control" required>
+			<input type="text" name="address" id="address" class="form-control" required>
 		</div>
 		<div class="col-12">
 			<label for="centre" class="form-label">Bạn sẽ tham gia khóa học tại cơ sở nào?</label>
@@ -39,7 +39,7 @@
 			</select>
 		</div>
 		<div class="col-12">
-			<button type="submit" class="btn btn-primary">Gửi đăng ký</button>
+			<button type="submit" class="btn btn-primary" name="submit">Gửi đăng ký</button>
 		</div>
 	</form>
 </div>

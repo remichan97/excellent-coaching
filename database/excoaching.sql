@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 06, 2021 at 01:21 PM
+-- Generation Time: Mar 11, 2021 at 01:36 PM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -37,7 +37,7 @@ CREATE TABLE `address` (
 --
 
 INSERT INTO `address` (`addID`, `address`) VALUES
-(1, '189 Thanh Nhàn, Quỳnh Lôi, Hai Bà Trưng, Hà Nội'),
+(1, '285 Đội Cấn, Liễu Giai, Ba Đình, Hanoi'),
 (2, '54 Lê Thanh Nghị, Bách Khoa, Hai Bà Trưng, Hà Nội');
 
 -- --------------------------------------------------------
@@ -48,7 +48,7 @@ INSERT INTO `address` (`addID`, `address`) VALUES
 
 CREATE TABLE `admin` (
   `id` int(3) NOT NULL,
-  `username` int(100) NOT NULL,
+  `username` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(32) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -132,10 +132,18 @@ CREATE TABLE `register` (
   `name` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
   `cID` int(2) NOT NULL,
-  `addID` int(2) NOT NULL,
+  `addID` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
   `ref` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `register`
+--
+
+INSERT INTO `register` (`id`, `name`, `email`, `cID`, `addID`, `ref`, `date`) VALUES
+(1, 'Trương Vũ Bình', 'binh.truongvu97@outlook.com', 3, 'Cơ sở 1: 285 Đội Cấn, Liễu Giai, Ba Đình, Hanoi', 'Facebook', '0000-00-00'),
+(2, 'Trương Vũ Bình', 'binh.truongvu97@gmail.com', 3, 'Cơ sở 1: 285 Đội Cấn, Liễu Giai, Ba Đình, Hanoi', 'Google', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -155,9 +163,9 @@ CREATE TABLE `teacher` (
 --
 
 INSERT INTO `teacher` (`id`, `name`, `photo`, `description`) VALUES
-(1, 'Truong Vu Binh', '', ''),
-(2, 'Dang Tran Long', '', ''),
-(3, 'Dao Ngoc Quan', '', '');
+(1, 'Truong Vu Binh', '', 'Giang vien A'),
+(2, 'Dang Tran Long', '', 'Giao vien B'),
+(3, 'Dao Ngoc Quan', '', 'Giang vien C');
 
 --
 -- Indexes for dumped tables
@@ -249,7 +257,7 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT for table `register`
 --
 ALTER TABLE `register`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `teacher`

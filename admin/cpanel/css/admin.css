@@ -1,0 +1,46 @@
+header {
+	height: 60px;
+	background-color: #3c8dbc;
+}
+
+.title, .greeting {
+	line-height: 60px;
+	color: aliceblue;
+}
+
+aside {
+	background-color: #222d32;
+}
+
+.menu-item {
+	color: rgb(228, 232, 236);
+	padding: 5px 0 0 0;
+}
+
+footer {
+	background-color: #222d32;
+}
+
+footer>p {
+	text-align: center;
+	color: white;
+}
+
+.add {
+	text-align: center;
+}
+
+.image {
+    width: 150px;
+    height: 120px;
+}
+
+.image>img {
+    width: 100%;
+    height: auto;
+}
+
+.col-md-7>img {
+    width: 25%;
+    height: auto;
+}

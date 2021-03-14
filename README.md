@@ -53,8 +53,6 @@ Dưới đây là hướng dẫn để bắt đầu làm việc với bộ code 
 	![commit](assets/images/Screenshot%202021-01-21%20101151.png)
 
 	Để lưu các thay đổi này lên git, bạn sẽ cần thực hiện việc **Commit**, việc này để cho git ghi nhận thay đổi của bạn, và để chuẩn bị cho bước tiếp theo là **Push** (đẩy code lên github của nhóm), ở đây bạn nhấn vào ô Message và nhập vào đó thông tin của lần **Commit** này rồi nhấn tổ hợp phím `Ctrl + Enter` hoặc nhấn nút tick ở thanh công cụ.
-	
-	*Lưu ý*: Khi viết Message để commit, phiền bạn hãy ghi chi tiết trong commit đó bạn đã làm gì, thay đổi ở đâu, nếu có thể thì để lại comment trong code, việc này sẽ giúp mọi người có thể theo dõi tiến độ dễ dàng hơn.
 
 	Sau khi đã Commit, bạn có thể đẩy code lên github, cách đẩy code như sau:
 
