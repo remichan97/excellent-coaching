@@ -1,11 +1,17 @@
 .footer-basic {
-  position: absolute;
+  position: relative;
   padding: 40px 0;
   background-color: #ffffff;
   color: #4b4c4d;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.footer-basic:after, .footer-basic:before {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .footer-basic ul {
