@@ -12,7 +12,7 @@
 	<table class="table table-bordered">
 		<thead class="thead-light">
 			<tr>
-				<th scope="col">STT</th>
+				<th scope="col">Mã đăng ký</th>
 				<th scope="col">Họ và tên</th>
 				<th scope="col">Email</th>
 				<th scope="col">Khóa học đăng ký</th>
