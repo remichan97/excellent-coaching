@@ -48,6 +48,12 @@
 			case 'course':
 				include "../cpanel/view/course.php";
 				break;
+			case 'editCourse':
+				include "../cpanel/view/editCourse.php";
+				break;
+			case 'addCourse':
+				include "../cpanel/view/addCourse.php";
+				break;
 		}
 	} else {
 		include "../cpanel/view/home.php";

@@ -2,7 +2,7 @@
 
 <div class="category">
 	<?php include "../cpanel/model/notificationCategory.php"?>
-	<h3>Quản lý danh mục khóa học</h3>
+	<h3>Danh sách danh mục khóa học</h3>
 	<?php include "../cpanel/controller/addCategory.php" ?>
 	<table class="table table-bordered">
 		<thead class="thead thead-light">
