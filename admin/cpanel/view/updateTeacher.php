@@ -28,7 +28,7 @@
 		</div>
 		<div class="form-group row">
 			<label for="image" class="col-md-2 col-form-label">Chọn ảnh mới:</label>
-			<input type="file" name="image" id="image" class="form-control-file col-md-7" required accept="image/jpeg, image/png">
+			<input type="file" name="image" id="image" class="form-control-file col-md-7" accept="image/jpeg, image/png">
 		</div>
 		<div class="form-group row">
 			<label for="info" class="col-md-2 col-form-label">Thông tin về giảng viên:</label>

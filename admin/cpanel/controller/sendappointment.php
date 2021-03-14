@@ -44,7 +44,7 @@
 			$datetime = strtotime($date);
 			$d = date('d',$datetime);
 			$m = date('m',$datetime);
-			$y = date('y',$datetime);
+			$y = date('Y',$datetime);
 			$email = $q['email'];
 			$subject = "Thay đổi thời gian học viên đến hoàn tất hồ sơ đăng ký khóa học";
 			$body = "Dear ".$q['name'].",\n";
