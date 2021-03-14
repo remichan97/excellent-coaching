@@ -23,6 +23,7 @@ $c = mysqli_query($conn, "select distinct a.catID, catName from course a join ca
     <section class="site-wrapper">
         <?php include "./layout/header.php" ?>
         <?php include "./layout/body.php" ?>
+        <?php include "./layout/map.php" ?>
         <?php include "./layout/footer.php" ?>
         <?php include "./layout/background.php" ?>
     </section>

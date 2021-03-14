@@ -59,7 +59,7 @@
 .content_academy_wrap {
   position: relative;
   width: 100%;
-  padding: 80px 80px 250px 80px;
+  padding: 80px 80px 80px 80px;
   z-index: 2;
   display: block;
 }
@@ -73,7 +73,7 @@
 .row_title {
   width: 47%;
   float: left;
-  margin-right: 6%;
+  margin-right: 15%;
   padding: 10px 0;
   display: block;
   float: left;
@@ -83,13 +83,9 @@
   position: relative;
   float: left;
   width: 38%;
-  margin-left: 9%;
   padding: 10px 0;
   display: block;
   float: left;
-}
-
-.search_button {
 }
 
 input {
@@ -102,9 +98,6 @@ input {
 .search_icon {
   font-size: 27px;
   color: white;
-}
-
-.fa.fa-search.search_icon {
 }
 
 .search_button {
@@ -313,6 +306,4 @@ a:hover {
   z-index: 100;
 }
 
-.tag_academy_row.col:after .tag_academy_row.col:before {
-}
 
