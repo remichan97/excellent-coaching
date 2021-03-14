@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<div class="col-sm-3">
-			<div class="card">
+			<div class="card border-primary">
 				<div class="card-body">
 					<p class="card-text"><img src="https://img.icons8.com/fluent/48/000000/calendar.png"/> <a href="?request=appointment"><?= $teacher ?> đăng ký mới chưa đặt lịch hẹn</a></p>
 				</div>
