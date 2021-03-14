@@ -44,3 +44,7 @@ footer>p {
     width: 25%;
     height: auto;
 }
+
+th {
+	text-align: center;
+}

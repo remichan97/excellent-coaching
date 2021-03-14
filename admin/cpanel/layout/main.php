@@ -42,6 +42,9 @@
 			case 'category':
 				include "../cpanel/view/category.php";
 				break;
+			case 'editCategory':
+				include "../cpanel/view/editCategory.php";
+				break;
 		}
 	} else {
 		include "../cpanel/view/home.php";

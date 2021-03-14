@@ -6,7 +6,7 @@
 		<div class="col-sm-3">
 			<div class="card border-primary">
 				<div class="card-body">
-					<p class="card-text"><img src="https://img.icons8.com/fluent/50/000000/database.png" /> <a href="?request=category"><?= $course ?> khóa học</a> và <a href="?request=course"><?= $category ?> danh mục</a></p>
+					<p class="card-text"><img src="https://img.icons8.com/fluent/50/000000/database.png" /> <a href="?request=course"><?= $course ?> khóa học</a> và <a href="?request=category"><?= $category ?> danh mục</a></p>
 				</div>
 			</div>
 		</div>

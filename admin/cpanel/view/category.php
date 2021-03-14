@@ -15,8 +15,8 @@
 				<tr>
 					<th scope="row"><?= $item['catID'] ?></th>
 					<td><?= $item['catName'] ?></td>
-					<td>
-						<?php include "../cpanel/controller/editCategory.php"?>
+					<td style="text-align: center;">
+						<a href="?request=editCategory&id=<?=$item['catID']?>" class="btn btn-primary">Sửa</a>
 					</td>
 				</tr>
 			<?php endforeach; ?>
