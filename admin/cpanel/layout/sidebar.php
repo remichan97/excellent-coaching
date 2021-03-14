@@ -5,5 +5,6 @@
 	<p class="menu-item"><a href="?request=appointment"><img src="https://img.icons8.com/fluent/24/000000/windows-calendar.png"/> Đặt lịch hẹn cho học viên</a></p>
 	<p class="menu-item"><a href="?request=teacher"><img src="https://img.icons8.com/fluent/24/000000/guest-male.png"/> Quản lý giảng viên</a></p>
 	<p class="menu-item"><a href="?request=feedback"><img src="https://img.icons8.com/fluent/24/000000/email-open.png"/> Phản hồi khách hàng</a></p>
+	<p class="menu-item"><a href="?request=changePassword"><img src="https://img.icons8.com/fluent/24/000000/key-security.png"/> Đổi mật khẩu</a></p>
 	<p class="menu-item"><a href="?request=logout"><img src="https://img.icons8.com/fluent/24/000000/shutdown.png"/> Đăng xuất</a></p>
 </aside>

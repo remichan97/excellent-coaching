@@ -36,6 +36,9 @@
 			case 'home':
 				include "../cpanel/view/home.php";
 				break;
+			case 'changePassword':
+				include "../cpanel/view/changePassword.php";
+				break;
 		}
 	} else {
 		include "../cpanel/view/home.php";
