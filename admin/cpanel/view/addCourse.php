@@ -1,3 +1,6 @@
+<?php include "../cpanel/controller/addCourseOption.php"?>
+<?php include "../cpanel/controller/addCourse.php"?>
+
 <div class="addCourse">
 <?php if(isset($_SESSION['dupAdd']) && $_SESSION['dupAdd'] == true):?>
 	<div class="alert alert-danger">Trùng tên khóa học!</div>
@@ -47,7 +50,7 @@
 			<textarea name="description" id="courseDescription" cols="30" rows="10"></textarea>
 			<script>CKEDITOR.replace('courseDescription')</script>
 		</div>
-		<button type="submit" name="editCourse" class="btn btn-primary">Thêm khóa học</button>
+		<button type="submit" name="addCourse" class="btn btn-primary">Thêm khóa học</button>
 		<a href="?request=course" class="btn btn-light">Trở về</a>
 	</form>
 </div>

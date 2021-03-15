@@ -1,4 +1,5 @@
-<?php 
+<?php
+	include "../cpanel/model/database.php";
 	if (isset($_GET['id'])) {
 		$_SESSION['deleteCourse'] = $_POST;
 		$id = $_GET['id'];

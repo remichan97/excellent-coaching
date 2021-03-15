@@ -54,6 +54,9 @@
 			case 'addCourse':
 				include "../cpanel/view/addCourse.php";
 				break;
+			case 'deleteCourse':
+				include "../cpanel/controller/deleteCourse.php";
+				break;
 		}
 	} else {
 		include "../cpanel/view/home.php";
