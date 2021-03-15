@@ -21,7 +21,7 @@
 		<div class="content_academy_wrap">
 			<div class="content_academy_inner">
 				<section class="header_title">
-					<h1>Hệ thống giảng viên của Excellent Coaching</h1>
+					<h1>Hệ thống giảng viên của Excellent Coaching Vietnam</h1>
 				</section>
 				<?php include "../view/teacherView.php"?>
 			</div>
