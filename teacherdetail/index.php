@@ -33,6 +33,7 @@ if (isset($_GET['teacherid'])) {
 				<header class="title_form">
 					<div class="col_9 layer">
 						<h1>Giảng viên <?=$td['name']?></h1>
+						<p>Chuyên ngành: <?=$td['profession']?></p>
 					</div>
 					<section class="description_form">
 						<div class="col_9">

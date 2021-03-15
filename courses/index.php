@@ -32,6 +32,7 @@
 				</div>
 				<div class="col_3">
 					<h4>Thông tin khóa học</h4>
+					<button onclick="window.print()" class="btn btn-primary">Lưu thông tin</button>
 				</div>
 				<section class="description_form">
 					<div class="col_9">
