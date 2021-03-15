@@ -19,12 +19,15 @@
         <div class="content_academy_inner">
             <header class="title_form">
 				<div class="title">
-					<h3>Excellent Coaching</h3>
+					<h2>Giới thiệu về Excellent Coaching Vietnam</h2>
 				</div>
                 <section class="description_form">
                     <div class="col_9">
-                        <p>It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a project where blocks of text are needed, this tool can be a great way to get that. It's a good way to test your programming and that the tool being created is working well.<br></p>
-                        <p>Slave spirituals often had hidden double meanings. On one level, spirituals referenced heaven, Jesus, and the soul, but on another level, the songs spoke about slave resistance. For example, according to Frederick Douglass, the song “O Canaan, Sweet Canaan” spoke of slaves’ longing for heaven, but it also expressed their desire to escape to the North. Careful listeners heard this second meaning in the following lyrics: “I don’t expect to stay / Much longer here. / Run to Jesus, shun the danger. / I don’t expect to stay.” When slaves sang this song, they could have been speaking of their departure from this life and their arrival in heaven; however, they also could have been describing their plans to leave the South and run, not to Jesus, but to the North. Slaves even used songs like “Steal Away to Jesus (at midnight)” to announce to other slaves the time and place of secret, forbidden meetings. What whites heard as merely spiritual songs, slaves discerned as detailed messages. The hidden meanings in spirituals allowed slaves to sing what they could not say.<br></p>
+                        <h4>Excellent Coaching Ấn Độ</h4>
+                        <p>Excellent Coaching là tổ chức đào tạo được thành lập vào năm 2001 tại Dwarka, Ấn Độ. Excellent Coaching đã có hơn 20 năm kinh nghiệm đào tạo Công nghệ Thông tin &#40;CNTT&#41; tại Ấn Độ, và hàng triệu lượt học viên tốt nghiệp và thành công trên con đường họ đã chọn. Sứ mệnh và mục tiêu của Excellent Coaching là cung cấp một chương trình đào tạo chất lượng với các chương trình học chú trọng vào thực hành nhằm đảm bảo các học viên có thể phát huy tối đa khả năng của họ trên cong đường sự nghiệp đã chọn.<br/></p>
+                        <h4>Excellent Coaching Vietnam</h4>
+                        <p>Với mong muốn tiếp cận với các học viên quốc tế, Excellent Coaching đã thành lập cơ sở đầu tiên tại Việt Nam vào năm 2010. </p>
+
                     </div>
                 </section>
             </header>
