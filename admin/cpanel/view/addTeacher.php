@@ -9,6 +9,10 @@
 			<input type="text" name="name" id="name" class="form-control col-md-7" required>
 		</div>
 		<div class="form-group row">
+			<label for="prefession" class="col-md-2 col-form-label">Chuyên ngành:</label>
+			<input type="text" name="profession" id="profession" class="form-control col-md-7" required>
+		</div>
+		<div class="form-group row">
 			<label for="imageTeacher" class="col-md-2 col-form-label">Chọn ảnh:</label>
 			<input type="file" name="image" id="imageTeacher" class="form-control-file col-md-7" required accept="image/jpeg, image/png">
 		</div>

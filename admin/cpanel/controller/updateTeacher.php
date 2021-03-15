@@ -3,6 +3,7 @@
 		$_SESSION['updateTeacher'] =$_POST;
 		$name = $_POST['name'];
 		$info = $_POST['info'];
+		$pro = $_POST['profession'];
 		$image = $teacher['photo'];
 		$fileName= $_FILES['image']['name'];
 		if ($fileName == null) {
@@ -23,7 +24,7 @@
 				exit();
 			}
 		}
-		$updateteacher = "update teacher set name= '$name', photo='$imagefile',description='$info' where id = '$id'";
+		$updateteacher = "update teacher set name='$name',profession='$pro',photo='$imagefile',description='$info' where id = '$id'";
 		if (mysqli_query($conn,$updateteacher)) {
 			unset($_SESSION['updateTeacher']);
 			$_SESSION['updated'] = true;

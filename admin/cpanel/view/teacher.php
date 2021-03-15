@@ -10,6 +10,7 @@
 		<thead class="thead thead-light">
 			<th scope="col">ID</th>
 			<th scope="col">Họ và tên giảng viên</th>
+			<th scope="col">Chuyên ngành</th>
 			<th scope="col">Ảnh giảng viên</th>
 			<th scope="col">Thao tác</th>
 		</thead>
@@ -18,6 +19,7 @@
 				<tr>
 					<th scope="row"><?= $item['id'] ?></th>
 					<td><?= $item['name'] ?></td>
+					<td><?=$item['profession']?></td>
 					<?php if ($item['photo']) : ?>
 						<td class="image"><img src="../assets/img/<?= $item['photo'] ?>" alt="Ảnh giảng viên <?= $item['name'] ?>"></td>
 					<?php else : ?>

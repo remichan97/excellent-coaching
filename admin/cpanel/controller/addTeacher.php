@@ -3,6 +3,7 @@
 	if (isset($_POST['addTeacher'])) {
 		$_SESSION['addTeacher'] = $_POST;
 		$name = $_POST['name'];
+		$pro = $_POST['profession'];
 		$dup = "select*from teacher where name like '$name'";
 		$checkDup = mysqli_query($conn,$dup);
 		if (mysqli_num_rows($checkDup) == 1) {
@@ -19,7 +20,7 @@
 			$ext1 = substr($imagefile,strlen($imagefile)-4,4);
 			if ($ext=="JPG"||$ext=="jpg"||$ext1=="JPEG"||$ext1=="jpeg"||$ext=="GIF"||$ext=="gif"||$ext=="BMP"||$ext=="bmp"||$ext=="PNG"||$ext=="png") {
 				move_uploaded_file($fileTemp,$path.$imagefile);
-				$addteacher = "insert into teacher (name,photo,description) values ('$name','$imagefile','$info')";
+				$addteacher = "insert into teacher (name,profession,photo,description) values ('$name','$profession','$imagefile','$info')";
 				mysqli_query($conn,$addteacher);
 				unset($_SESSION['addTeacher']);
 				$_SESSION['added'] = true;
