@@ -8,7 +8,7 @@
             </div>
             <div class="row_search col"><input type="search" placeholder="Tìm kiếm khóa học..." name='keyword' oninput="getSearch(value)"><button class="btn btn-primary search_button" type="button"><i class="fa fa-search search_icon"></i></button></div>
         </div>
-        <div id="result"></div>
+        <div id="result" class="list-group sub-item"></div>
         <?php include "./view/courselineup.php" ?>
     </div>
 </div>
