@@ -1,6 +1,6 @@
 <?php
 include "../model/database.php";
-$sql = "select catName, cName, name, duration, price from course a join teacher b on a.teacher = b.id join category c on a.catID=c.catID";
+$sql = "select catName, cName, name, duration, price from course a join teacher b on a.tID = b.tID join category c on a.catID=c.catID";
 $query = mysqli_query($conn, $sql);
 ?>
 

@@ -23,7 +23,7 @@
 			<label for="teacher" class="col-md-2 col-form-label">Giảng viên đào tạo:</label>
 			<select name="teacher" id="teacher" class="form-control col-md-8">
 				<?php foreach($teacher as $item):?>
-					<option value="<?=$item['id']?>" <?=$item['id']==$courseinfo['teacher']?'selected':''?>><?=$item['name']?></option>
+					<option value="<?=$item['tID']?>" <?=$item['tID']==$courseinfo['tID']?'selected':''?>><?=$item['name']?></option>
 				<?php endforeach;?>
 			</select>
 		</div>

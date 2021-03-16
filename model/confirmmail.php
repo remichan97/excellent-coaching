@@ -8,9 +8,9 @@
 				$body.="Email: ".$email."\n";
 				$body.="Số điện thoại: ".$phone."\n";
 				$body.="Địa chỉ: ".$address."\n";
-				$body.="Bạn sẽ tham gia khóa học này ở cơ sở ".$centre."\n";
+				$body.="Bạn sẽ tham gia khóa học này ở cơ sở ".$centre.": ". $ad['address']. "\n";
 				$body.="\nBạn biết đến chúng tôi thông qua ".$ref."\r\n";
-				$body.="\nChúng tôi sẽ thông báo cho bạn thời gian bạn cần đến trung tâm để hoàn tất hồ sơ trong 24 giờ tới!\n";
+				$body.="\nChúng tôi sẽ thông báo cho bạn thời gian bạn cần đến trung tâm để hoàn tất hồ sơ trong thời gian sớm nhất!\n";
 				$header = array(
 					"From: Excellent Coaching Vietnam <excellentcoachingvn@gmail.com>", //phải có nếu không mớ phía dưới không gửi được mail
 					"Content-Type: text/plain;charset=utf-8" //phải có nếu không email client (Outlook, Thunderbird..) sẽ không hiển thị được tiếng Việt

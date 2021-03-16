@@ -2,12 +2,12 @@
 if (isset($_GET['teacherid'])) {
 	include "../model/database.php";
 	$id = $_GET['teacherid'];
-	$detail = "select*from teacher where id = '$id'";
+	$detail = "select*from teacher where tID = '$id'";
 	$teacherdetail = mysqli_query($conn, $detail);
 	$td = mysqli_fetch_array($teacherdetail);
-	$otherteacher = "select*from teacher where id not like '$id'";
+	$otherteacher = "select*from teacher where tID not like '$id'";
 	$other = mysqli_query($conn, $otherteacher);
-	$teacherCourse = "select cID,cName from course where teacher = '$id'";
+	$teacherCourse = "select cID,cName from course where tID = '$id'";
 	$course = mysqli_query($conn,$teacherCourse);
 }
 ?>

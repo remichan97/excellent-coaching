@@ -2,7 +2,7 @@
 	include "../cpanel/model/database.php";
 	if (isset($_GET['id'])) {
 		$id = $_GET['id'];
-		$query = mysqli_query($conn,"select*from teacher where id = '$id'");
+		$query = mysqli_query($conn,"select*from teacher where tID = '$id'");
 		$teacher = mysqli_fetch_array($query);
 	}
 ?>

@@ -24,7 +24,7 @@
 				exit();
 			}
 		}
-		$updateteacher = "update teacher set name='$name',profession='$pro',photo='$imagefile',description='$info' where id = '$id'";
+		$updateteacher = "update teacher set name='$name',profession='$pro',photo='$imagefile',description='$info' where tID = '$id'";
 		if (mysqli_query($conn,$updateteacher)) {
 			unset($_SESSION['updateTeacher']);
 			$_SESSION['updated'] = true;

@@ -17,7 +17,7 @@
 		<tbody>
 			<?php foreach ($query as $item) : ?>
 				<tr>
-					<th scope="row"><?= $item['id'] ?></th>
+					<th scope="row"><?= $item['tID'] ?></th>
 					<td><?= $item['name'] ?></td>
 					<td><?=$item['profession']?></td>
 					<?php if ($item['photo']) : ?>
@@ -25,9 +25,9 @@
 					<?php else : ?>
 						<td>Chưa có ảnh của giảng viên</td>
 					<?php endif; ?>
-					<td><a href="?request=updateTeacher&id=<?= $item['id'] ?>" class="btn btn-primary">Sửa</a>
-						<?php if (mysqli_num_rows(mysqli_query($conn, "select*from course where teacher = '$item[id]'")) == 0) : ?>
-							<a onclick="return confirm('Bạn có chắc muốn xóa giảng viên này?');" href="?request=deleteTeacher&id=<?= $item['id'] ?>" class="btn btn-danger" onclick="">Xóa<a>
+					<td><a href="?request=updateTeacher&id=<?= $item['tID'] ?>" class="btn btn-primary">Sửa</a>
+						<?php if (mysqli_num_rows(mysqli_query($conn, "select*from course where tID = '$item[tID]'")) == 0) : ?>
+							<a onclick="return confirm('Bạn có chắc muốn xóa giảng viên này?');" href="?request=deleteTeacher&id=<?= $item['tID'] ?>" class="btn btn-danger" onclick="">Xóa<a>
 								<?php endif; ?>
 					</td>
 				</tr>

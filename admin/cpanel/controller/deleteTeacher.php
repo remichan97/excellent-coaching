@@ -3,7 +3,7 @@
 		$_SESSION['delete'] = $_POST;
 		$id = $_GET['id'];
 		include "../cpanel/model/database.php";
-		$delete = "delete from teacher where id='$id'";
+		$delete = "delete from teacher where tID='$id'";
 		mysqli_query($conn,$delete);
 		unset($_SESSION['delete']);
 		$_SESSION['completed'] = true;

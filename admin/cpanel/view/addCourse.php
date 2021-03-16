@@ -26,7 +26,7 @@
 			<select name="teacher" id="teacher" class="form-control col-md-8" required>
 				<option value="" hidden>Chọn một...</option>
 				<?php foreach($teacher as $item):?>
-					<option value="<?=$item['id']?>"><?=$item['name']?></option>
+					<option value="<?=$item['tID']?>"><?=$item['name']?></option>
 				<?php endforeach;?>
 			</select>
 		</div>

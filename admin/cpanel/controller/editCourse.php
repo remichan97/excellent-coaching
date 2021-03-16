@@ -8,7 +8,7 @@ if (isset($_POST['editCourse'])) {
 	$duration = $_POST['duration'];
 	$status = $_POST['status'];
 	$description = $_POST['description'];
-	$edit = "update course set cName = '$name', catID = '$category', teacher = '$teacher', price = '$price', duration = '$duration', status = $status, description = '$description' where cID = '$id'";
+	$edit = "update course set cName = '$name', catID = '$category', tID = '$teacher', price = '$price', duration = '$duration', status = $status, description = '$description' where cID = '$id'";
 	mysqli_query($conn, $edit);
 	unset($_SESSION['editCourse']);
 	$_SESSION['courseEdited'] = true;

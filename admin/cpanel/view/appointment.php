@@ -16,6 +16,7 @@
 				<th scope="col">Họ và tên</th>
 				<th scope="col">Email</th>
 				<th scope="col">Khóa học đăng ký</th>
+				<th scope="col">Địa chỉ học viên</th>
 				<th scope="col">Cơ sở đăng ký</th>
 				<th scope="col">Kênh truyền thông</th>
 				<th scope="col">Ngày đăng ký</th>
@@ -29,10 +30,11 @@
 						<td><?=$item['name']?></td>
 						<td><?=$item['email']?></td>
 						<td><?=$item['cName']?></td>
+						<td><?=$item['stdAddress']?></td>
 						<td><?=$item['address']?></td>
 						<td><?=$item['ref']?></td>
 						<td><?=date_format(date_create($item['regDate']),"d/m/Y")?></td>
-						<?php if($item['date'] == "0000-00-00 00:00:00"):?>
+						<?php if($item['date'] == "0000-00-00"):?>
 							<td>Chưa đặt lịch hẹn</td>
 							<?php else:?>
 							<td><?=date_format(date_create($item['date']),"d/m/Y")?></td>
