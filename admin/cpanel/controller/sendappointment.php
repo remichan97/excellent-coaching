@@ -10,7 +10,7 @@
 		$subject = "Hẹn học viên đến hoàn tất hồ sơ đăng ký khóa học";
 		$body = "Dear ".$q['name'].",\n";
 		$body .= "Cảm ơn bạn đã đăng ký tham gia khóa học ".$q['cName']."!\n";
-		$body .= "Để hoàn tất hồ sơ đăng ký khóa học, mời bạn đến ".$q['addID']." của Excellent Coaching Vietnam vào ngày ".$d. " tháng ".$m." năm ".$y."!\n" ;
+		$body .= "Để hoàn tất hồ sơ đăng ký khóa học, mời bạn đến cơ sở".$q['address']." của Excellent Coaching Vietnam vào ngày ".$d. " tháng ".$m." năm ".$y."!\n" ;
 		$body .="\nVui lòng trả lời lại email này nếu bạn có thắc mắc cần được giảỉ đáp.\n";
 		$header = array(
 			"From: Excellent Coaching Vietnam <excellentcoachingvn@gmail.com>", //phải có nếu không mớ phía dưới không gửi được mail
@@ -49,7 +49,7 @@
 			$subject = "Thay đổi thời gian học viên đến hoàn tất hồ sơ đăng ký khóa học";
 			$body = "Dear ".$q['name'].",\n";
 			$body .= "Cảm ơn bạn đã đăng ký tham gia khóa học ".$q['cName']."!\n";
-			$body .= "Vì một số lý do ngoài mong muốn, nên để hoàn tất hồ sơ đăng ký khóa học, mời bạn đến ".$q['addID']." của Excellent Coaching Vietnam vào ngày ".$d. " tháng ".$m." năm ".$y."\n" ;
+			$body .= "Vì một số lý do ngoài mong muốn, nên để hoàn tất hồ sơ đăng ký khóa học, mời bạn đến cơ sở".$q['address']." của Excellent Coaching Vietnam vào ngày ".$d. " tháng ".$m." năm ".$y."\n" ;
 			$body .= "\nChúng tôi xin lỗi vì sự bất tiện này.";
 			$body .="\nVui lòng trả lời lại email này nếu bạn có thắc mắc cần được giảỉ đáp.\n";
 			$header = array(

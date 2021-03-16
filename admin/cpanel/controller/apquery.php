@@ -1,5 +1,5 @@
 <?php
 include "../cpanel/model/database.php";
-$a = "select id,name,email,cName,addID,ref,regDate,date from register a join course b on a.cID = b.cID";
+$a = "select id,name,email,cName,address,ref,regDate,date from register a join course b on a.cID = b.cID join address c on a.addID=c.addID";
 $ap = mysqli_query($conn, $a);
 ?>

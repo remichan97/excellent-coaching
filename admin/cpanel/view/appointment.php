@@ -29,7 +29,7 @@
 						<td><?=$item['name']?></td>
 						<td><?=$item['email']?></td>
 						<td><?=$item['cName']?></td>
-						<td><?=$item['addID']?></td>
+						<td><?=$item['address']?></td>
 						<td><?=$item['ref']?></td>
 						<td><?=date_format(date_create($item['regDate']),"d/m/Y")?></td>
 						<?php if($item['date'] == "0000-00-00 00:00:00"):?>

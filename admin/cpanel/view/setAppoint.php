@@ -2,7 +2,7 @@
 include "../cpanel/model/database.php";
 if (isset($_GET['id'])) {
 	$id = $_GET['id'];
-	$sql = "select id,name,email,cName,addID,ref,regDate,date from register a join course b on a.cID = b.cID where id = " . $id;
+	$sql = "select id,name,email,cName,address,ref,regDate,date from register a join course b on a.cID = b.cID join address c on a.addID = c.addID where id = " . $id;
 	$q = mysqli_query($conn, $sql);
 	$q = mysqli_fetch_array($q);
 }

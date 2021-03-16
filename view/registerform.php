@@ -25,7 +25,7 @@
 			<select name="centre" id="centre" class="form-control" required>
 				<option value="" hidden>Chọn một cơ sở...</option>
 				<?php foreach($a as $cen):?>
-					<option value="Cơ sở <?=$cen['addID']?>: <?=$cen['address']?>"><?=$cen['address']?></option>
+					<option value="<?=$cen['addID']?>"><?=$cen['address']?></option>
 				<?php endforeach;?>
 			</select>
 		</div>
