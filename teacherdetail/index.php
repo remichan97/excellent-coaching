@@ -50,7 +50,7 @@ if (isset($_GET['teacherid'])) {
                                 <ul class="top_list">
                                     <li>Các khóa học mà giảng viên hiện đang đào tạo</li>
 									<?php foreach($course as $item):?>
-										<li><a href="<?=$item['cID']?>"><?=$item['cName']?></a></li>
+										<li><a href="../courses?courseID=<?=$item['cID']?>"><?=$item['cName']?></a></li>
 									<?php endforeach;?>
                                 </ul>
                             </div>
