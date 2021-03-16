@@ -1,4 +1,4 @@
-<?php session_start()?>
+<?php session_start() ?>
 <?php include "../model/database.php" ?>
 <?php include "../controller/showinfo.php" ?>
 
@@ -18,48 +18,47 @@
 </head>
 
 <body>
-<section class="site_wrap">
-	<?php include "../layout/header.php" ?>
-	</div>
-	<section class="content_academy_wrap">
-		<div class="content_academy_inner">
-			<div class="status">
-			<?php include "../view/registerstatus.php" ?>
-			</div>
-			<header class="title_form">
-				<div class="col_9 layer">
-					<h1><?= $d['cName'] ?></h1>
+	<section class="site_wrap">
+		<?php include "../layout/header.php" ?>
+		</div>
+		<section class="content_academy_wrap">
+			<div class="content_academy_inner">
+				<div class="status">
+					<?php include "../view/registerstatus.php" ?>
 				</div>
-				<div class="col_3">
-					<h4>Thông tin khóa học</h4>
-					<button onclick="window.print()" class="btn btn-primary">Lưu thông tin</button>
-				</div>
-				<section class="description_form">
-					<div class="col_9">
-						<?= $d['description'] ?>
+				<header class="title_form">
+					<div class="col_9 layer">
+						<h1><?= $d['cName'] ?></h1>
 					</div>
 					<div class="col_3">
-						<div class="list_lecturers">
-							<ul class="top_list">
-								<li>Giảng viên: <?= $d['name'] ?></li>
-								<li>Thời lượng khóa học: <?= $d['duration'] ?> tháng</li>
-								<li>Học phí: <?= number_format($d['price'], 0, ',', '.') ?> đồng</li>
-							</ul>
-						</div>
+						<h4>Giảng viên: <?=$d['name']?></h4>
 					</div>
+					<section class="description_form">
+						<div class="col_9">
+							<?= $d['description'] ?>
+						</div>
+						<div class="col_3">
+							<div class="list_lecturers">
+								<ul class="top_list">
+									<li>Thời lượng khóa học: <?= $d['duration'] ?> tháng</li>
+									<li>Học phí: <?= number_format($d['price'], 0, ',', '.') ?> đồng</li>
+									<button onclick="window.print()" class="btn btn-primary" style="margin-top: 2rem;">Lưu thông tin</button>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</header>
+			</div>
+		</section>
+		<section class="content_empty_wrap">
+			<div class="content_academy_inner">
+				<section class="contact-clean">
+					<?php include "../view/registerform.php" ?>
 				</section>
-			</header>
-		</div>
+			</div>
+			<?php include "../layout/footer.php" ?>
+		</section>
 	</section>
-	<section class="content_empty_wrap">
-		<div class="content_academy_inner">
-			<section class="contact-clean">
-				<?php include "../view/registerform.php" ?>
-			</section>
-		</div>
-		<?php include "../layout/footer.php" ?>
-	</section>
-</section>
 	<script src="../assets/subsite/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../assets/subsite/js/bs-init.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
