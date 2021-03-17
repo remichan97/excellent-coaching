@@ -17,8 +17,8 @@
 		<input type="text" name="name" id="name" value="<?=$teacher['name']?>" class="form-control col-md-7">
 		</div>
 		<div class="form-group row">
-		<label for="name" class="col-md-2 col-form-label">Chuyên ngành:</label>
-		<input type="text" name="name" id="name" value="<?=$teacher['profession']?>" class="form-control col-md-7">
+		<label for="profession" class="col-md-2 col-form-label">Chuyên ngành:</label>
+		<input type="text" name="profession" id="profession" value="<?=$teacher['profession']?>" class="form-control col-md-7">
 		</div>
 		<div class="form-group row">
 		<label for="name" class="col-md-2 col-form-label">Ảnh hiện tại của giảng viên</label>
