@@ -4,12 +4,12 @@
   $sql="select * from course where status = '1' and cName like '%$key%'";
   $result='';
   $rs=mysqli_query($conn,$sql);
-  if($rs!=null){
+  if(mysqli_num_rows($rs) > 0){
     foreach($rs as $item){
-      $result.="<section><a href='../courses?courseID=$item[cID]'>".$item['cName']."</a></section>";
+      $result.="<p><a href='../courses?courseID=$item[cID]'>".$item['cName']."</a></p>";
     }
   }else{
-    $result="Không tìm thấy sản phẩm";
+    $result.="<p>Không tìm thấy khóa học dựa trên từ khóa đã nhập<p>";
   }
   echo $result;
 ?>
