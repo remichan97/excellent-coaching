@@ -35,7 +35,7 @@
 				<option value="" hidden>Chọn một kênh truyền thông...</option>
 				<option value="Facebook">Facebook</option>
 				<option value="Google">Tìm kiếm trên Google</option>
-				<option value="Khác">Khác</option>
+				<option value="Kênh truyền thông khác">Khác</option>
 			</select>
 		</div>
 		<div class="col-12">

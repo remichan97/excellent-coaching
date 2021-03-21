@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 18, 2021 at 03:14 PM
+-- Generation Time: Mar 21, 2021 at 01:22 PM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -173,8 +173,8 @@ CREATE TABLE `teacher` (
 --
 
 INSERT INTO `teacher` (`tID`, `name`, `profession`, `photo`, `description`) VALUES
-(1, 'Trương Vũ Bình', 'PHP, HTML', '1615645051_81783070_p0.jpg', '<p>Experience</p>\\r\\n'),
-(2, 'Dang Tran Long', 'HTML, PHP, CSS, Python', 'Epyx6SbUUAE01Ft.jpg', 'Giao vien B'),
+(1, 'Trương Vũ Bình', 'PHP, HTML', '1616079291_81786345_p0.jpg', '<p>Experience</p>\r\n\r\n<p>&nbsp;</p>\r\n'),
+(2, 'Dang Tran Long', 'HTML, PHP, CSS, Python', '1616079376_images.jpg', '<p>Giao vien B</p>\r\n'),
 (3, 'Dao Ngoc Quan', 'HTML, CSS', 'EqoXy3dVEAEeBkc.jpg', 'Giang vien C');
 
 --
