@@ -306,4 +306,12 @@ a:hover {
   z-index: 100;
 }
 
+iframe.google-map {
+  width: 100%;
+}
 
+.map-wrap {
+  width: 400px;
+  margin: 2rem;
+  display: inline-block;
+}
