@@ -4,6 +4,7 @@
 		$_SESSION['replymsg'] = $_POST;
 		$email = $_POST['email'];
 		$subject = $_POST['subject'];
+		$subject = '=?utf-8?B?'.base64_encode($subject).'?=';
 		$body = $_POST['msg'];
 		$header = array(
 			"From: Excellent Coaching Vietnam <excellentcoachingvn@gmail.com>", //phải có nếu không mớ phía dưới không gửi được mail

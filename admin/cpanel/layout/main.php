@@ -12,6 +12,9 @@
 			case 'reply':
 				include "../cpanel/view/reply.php";
 				break;
+			case 'deleteFeedback':
+				include "../cpanel/controller/deleteFeedback.php";
+				break;
 			case 'appointment':
 				include "../cpanel/view/appointment.php";
 				break;

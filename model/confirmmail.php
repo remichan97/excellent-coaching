@@ -1,6 +1,7 @@
 <?php
 			if (mysqli_affected_rows($conn) == 1) {
 				$subject = "Xác nhận đăng ký khóa học";
+				$subject = '=?utf-8?B?'.base64_encode($subject).'?=';
 				$body = "Dear ". $name . "\n";
 				$body.= "Cảm ơn bạn đã đăng ký tham gia khóa học ". $d['cName'] . ".\n";
 				$body.= "Dưới đây là thông tin đăng ký khóa học mà bạn đã gửi cho chúng tôi:\n";

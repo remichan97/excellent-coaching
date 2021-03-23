@@ -19,6 +19,7 @@
 			$y = date('Y',$datetime);
 			$email = $q['email'];
 			$subject = "Hẹn học viên đến hoàn tất hồ sơ đăng ký khóa học";
+			$subject = '=?utf-8?B?'.base64_encode($subject).'?=';
 			$body = "Dear ".$q['name'].",\n";
 			$body .= "Cảm ơn bạn đã đăng ký tham gia khóa học ".$q['cName']."!\n";
 			$body .= "Để hoàn tất hồ sơ đăng ký khóa học, mời bạn đến cơ sở ".$q['address']." của Excellent Coaching Vietnam vào ngày ".$d. " tháng ".$m." năm ".$y."!\n" ;
@@ -59,6 +60,7 @@
 			$y = date('Y',$datetime);
 			$email = $q['email'];
 			$subject = "Thay đổi thời gian học viên đến hoàn tất hồ sơ đăng ký khóa học";
+			$subject = '=?utf-8?B?'.base64_encode($subject).'?=';
 			$body = "Dear ".$q['name'].",\n";
 			$body .= "Cảm ơn bạn đã đăng ký tham gia khóa học ".$q['cName']."!\n";
 			$body .= "Vì một số lý do ngoài mong muốn, nên để hoàn tất hồ sơ đăng ký khóa học, mời bạn đến cơ sở".$q['address']." của Excellent Coaching Vietnam vào ngày ".$d. " tháng ".$m." năm ".$y."\n" ;
