@@ -5,7 +5,7 @@
 		if (filter_var($email,FILTER_VALIDATE_EMAIL)) {
 			$subject = $_POST['subject'];
 			$body = $_POST['body'];
-			$feedback = "insert into feedback (email,subject,body) values ('$email','$subject','$body')";
+			$feedback = "insert into feedback (email,feedbackDate,subject,body) values ('$email',CURDATE(),'$subject','$body')";
 			$msg = mysqli_query($conn,$feedback);
 			if (mysqli_affected_rows($conn) == 1) {
 				unset($_SESSION['feedback']);

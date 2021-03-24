@@ -21,6 +21,7 @@ $fb = mysqli_query($conn, $f);
 			<tr>
 				<th scope="col">STT</th>
 				<th scope="col">Email</th>
+				<th scope="col">Ngày gửi</th>
 				<th scope="col">Tiêu đề</th>
 				<th scope="col">Nội dung</th>
 				<th scopr="col">Trạng thái</th>
@@ -32,6 +33,7 @@ $fb = mysqli_query($conn, $f);
 				<tr>
 					<th scope="row"><?= $item['id'] ?></th>
 					<td><?= $item['email'] ?></td>
+					<td><?= date_format(date_create($item['feedbackDate']),"d/m/Y") ?></td>
 					<td><?= $item['subject'] ?></td>
 					<td><?= $item['body'] ?></td>
 					<?php if ($item['response'] == 0) : ?>
