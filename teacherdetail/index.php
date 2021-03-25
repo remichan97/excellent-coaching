@@ -25,7 +25,7 @@ if (isset($_GET['teacherid'])) {
     <link rel="stylesheet" href="../assets/teacher/css/Footer-Basic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="../assets/teacher/css/logo_tag1.css">
+    <link rel="stylesheet" href="../assets/css/logo_tag1.css">
 </head>
 
 <body>
