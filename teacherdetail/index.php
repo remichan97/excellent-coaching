@@ -18,7 +18,7 @@ if (isset($_GET['teacherid'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Thông tin giảng viên - Exceleent Coaching Vietnam</title>
+    <title>Thông tin giảng viên - Excellent Coaching Vietnam</title>
     <link rel="stylesheet" href="../assets/teacher/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/teacher/fonts/ionicons.min.css">
     <link rel="stylesheet" href="../assets/teacher/css/description.css">
@@ -39,7 +39,7 @@ if (isset($_GET['teacherid'])) {
                         <h1>Giảng viên <?=$td['name']?></h1>
                     </div>
                     <div class="col_3">
-                        <h4><?=$td['profession']?></h4>
+                        <h4>Chuyên ngành: <?=$td['profession']?></h4>
                     </div>
                     <section class="description_form">
                         <div class="col_9">

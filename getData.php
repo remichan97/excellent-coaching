@@ -1,7 +1,7 @@
 <?php
   include "./model/database.php";
   $key=$_GET['key'];
-  $sql="select * from course where status = '1' and cName like '%$key%'";
+  $sql="select * from course where status = '1' and cName like '%$key%' or description like '%$key%'";
   $result='';
   $rs=mysqli_query($conn,$sql);
   if(mysqli_num_rows($rs) > 0){
