@@ -15,7 +15,7 @@
 				$_SESSION['duplicate'] = true;
 				header("Location: ".$_SERVER['REQUEST_URI']);
 			} else {
-				$add = "insert into register (name,email,cID,stdAddress,addID,ref,regDate) values ('$name','$email','$id','$address','$centre','$ref',CURDATE())";
+				$add = "insert into register (name,email,phone,cID,stdAddress,addID,ref,regDate) values ('$name','$email','$phone','$id','$address','$centre','$ref',CURDATE())";
 				$rs = mysqli_query($conn,$add);
 				$emailad = "select*from address where addID = '$centre'";
 				$ad = mysqli_query($conn,$emailad);

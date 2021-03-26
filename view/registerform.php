@@ -14,7 +14,7 @@
 		</div>
 		<div class="col-md-4">
 			<label for="name" class="form-label">Số điện thoại</label>
-			<input type="text" name="phone" id="phone" class="form-control" required="required" pattern="0[0-9]+">
+			<input type="text" name="phone" id="phone" class="form-control" required="required" pattern="0[0-9]+" maxlength="11">
 		</div>
 		<div class="col-12">
 			<label for="address" class="form-label">Địa chỉ: </label>

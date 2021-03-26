@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 25, 2021 at 06:38 AM
+-- Generation Time: Mar 26, 2021 at 06:00 AM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -131,6 +131,7 @@ CREATE TABLE `register` (
   `id` int(4) NOT NULL,
   `name` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` int(11) NOT NULL,
   `cID` int(2) NOT NULL,
   `stdAddress` varchar(450) COLLATE utf8_unicode_ci NOT NULL,
   `addID` int(2) NOT NULL,

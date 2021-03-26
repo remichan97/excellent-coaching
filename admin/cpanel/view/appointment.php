@@ -15,6 +15,7 @@
 				<th scope="col">Mã đăng ký</th>
 				<th scope="col">Họ và tên</th>
 				<th scope="col">Email</th>
+				<th scope="col">SĐT Học viên</th>
 				<th scope="col">Khóa học đăng ký</th>
 				<th scope="col">Địa chỉ học viên</th>
 				<th scope="col">Cơ sở đăng ký</th>
@@ -29,6 +30,7 @@
 						<th scope="row"><?=$item['id']?></th>
 						<td><?=$item['name']?></td>
 						<td><?=$item['email']?></td>
+						<td><?=$item['phone']?></td>
 						<td><?=$item['cName']?></td>
 						<td><?=$item['stdAddress']?></td>
 						<td><?=$item['address']?></td>
