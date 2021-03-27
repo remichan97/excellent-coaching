@@ -159,6 +159,7 @@ h3 {
   border: none;
   color: black;
   font-weight: 900;
+  background-color: transparent;
 }
 
 @media (min-width: 668px) {
@@ -211,19 +212,6 @@ ul, li, div, p {
   h3 {
     font-size: 6vw;
   }
-}
-
-.list-group .sub_item {
-  overflow: hidden;
-  position: relative;
-  right: 0;
-  left: 0;
-  top: auto;
-  background: #ededed;
-  margin: 30px 0;
-  padding: 0 5vw;
-  display: none;
-  color: black;
 }
 
 ul li:hover .list-group {
@@ -289,7 +277,7 @@ a:hover {
   text-decoration: none;
 }
 
-.list-group.sub-item {
+.sub-item {
   overflow: hidden;
   position: relative;
   right: 0;
@@ -298,7 +286,7 @@ a:hover {
   background: #ededed;
   margin: 30px 0;
   padding: 0 5vw;
-  /* display: none; */
+  display: none;
   color: black;
 }
 
@@ -314,4 +302,12 @@ iframe.google-map {
   width: 400px;
   margin: 6vw;
   display: inline-block;
+}
+
+.text_area {
+  color: black;
+}
+
+.text_area:hover {
+  color: darkgray;
 }
