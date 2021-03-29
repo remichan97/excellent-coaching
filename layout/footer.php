@@ -8,11 +8,11 @@
 	</div>
 
 	<ul class="list-inline">
-		<li class="list-inline-item"><a href="../" style="font-weight:bold;">Trang chính</a></li>
-		<li class="list-inline-item"><a href="../about" style="font-weight:bold;">Giới thiệu về trung tâm</a></li>
-		<li class="list-inline-item"><a href="../teacher" style="font-weight:bold;">Giảng viên</a></li>
-		<li class="list-inline-item"><a href="../?request=contact" style="font-weight:bold;">Liên hệ với chúng tôi</a></li>
+		<li class="list-inline-item"><a href="../" style="font-weight:bold;">Homepage</a></li>
+		<li class="list-inline-item"><a href="../about" style="font-weight:bold;">About Us</a></li>
+		<li class="list-inline-item"><a href="../teacher" style="font-weight:bold;">Our Faculty</a></li>
+		<li class="list-inline-item"><a href="../?request=contact" style="font-weight:bold;">Contact Us</a></li>
 	</ul>
 	<br>
-	<p class="copyright" style="font-weight: bold;">Excellent Coaching Vietnam © 2021</p>
+	<p class="copyright" style="font-weight: bold;">Excellent Coaching © 2021</p>
 </footer>

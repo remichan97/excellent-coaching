@@ -19,7 +19,7 @@
 
 <div class="add">
 	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-		Thêm danh mục khóa học
+		Add a new category
 	</button>
 </div>
 
@@ -28,7 +28,7 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Thêm danh mục khóa học</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Add new category</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -36,12 +36,12 @@
 			<div class="modal-body">
 				<form method="post">
 					<div class="form-group">
-						<label for="catName" class="form-label">Nhập tên danh mục cần thêm</label>
+						<label for="catName" class="form-label">New category name</label>
 						<input type="text" name="catName" id="catName" class="form-control" required="required">
 					</div>
 					<div class="modal-footer">
-						<button type="submit" class="btn btn-primary" name="addCategory">Thêm danh mục</button>
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+						<button type="submit" class="btn btn-primary" name="addCategory">Add</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					</div>
 				</form>
 			</div>

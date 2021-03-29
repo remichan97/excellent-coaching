@@ -19,11 +19,11 @@
             <div class="content_academy_inner">
                 <header class="title_form">
                     <div class="title">
-                        <h2>Giới thiệu về Excellent Coaching Vietnam</h2>
+                        <h2>About Us</h2>
                     </div>
                     <section class="description_form">
                         <div class="col_9">
-                            <h3>Excellent Coaching Ấn Độ</h3>
+                            <h3>Excellent Coaching India</h3>
                             <p>Excellent Coaching là tổ chức đào tạo được thành lập vào năm 2001 tại Dwarka, Ấn Độ. Excellent Coaching đã có hơn 20 năm kinh nghiệm đào tạo Công nghệ Thông tin &#40;CNTT&#41; tại Ấn Độ, và hàng triệu lượt học viên tốt nghiệp và thành công trên con đường họ đã chọn. Sứ mệnh và mục tiêu của Excellent Coaching là cung cấp một chương trình đào tạo chất lượng với các chương trình học chú trọng vào thực hành nhằm đảm bảo các học viên có thể phát huy tối đa khả năng của họ trên cong đường sự nghiệp đã chọn.<br /></p>
                             <h3>Excellent Coaching Vietnam</h3>
                             <p>Với mong muốn tiếp cận với các học viên quốc tế, Excellent Coaching đã thành lập cơ sở đầu tiên tại Việt Nam vào năm 2010. Sau hơn 10 năm hoạt động, chúng tôi đã đào tạo được hơn 100.000 Lập trình viên Quốc Tế cho ngành CNTT tại Việt Nam. <a href="../">Các khóa học</a> của Excellent Coaching Vietnam được thiết kế phù hợp với tiêu chuẩn Quốc Tế, giúp cho học viên có cơ hội tiếp thu, lĩnh hội, học hỏi lượng kiến thức chất lượng về công nghệ được công công nhận và áp dụng tại các quốc gia trên thế giới.<br /></p>

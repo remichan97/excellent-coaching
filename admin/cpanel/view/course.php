@@ -2,20 +2,20 @@
 
 <div class="course">
 <?php include "../cpanel/model/successCourseAction.php"?>
-	<h3>Danh sách khóa học</h3>
+	<h3>Course Listing</h3>
 	<div class="add">
-		<a href="?request=addCourse" class="btn btn-primary">Thêm khóa học</a>
+		<a href="?request=addCourse" class="btn btn-primary">Add a Course</a>
 	</div>
 	<table class="table table-bordered">
 		<thead class="thead thead-light">
-			<th scope="col">Mã khóa học</th>
-			<th scope="col">Tên khóa học</th>
-			<th scope="col">Danh mục khóa học</th>
-			<th scope="col">Giảng viên</th>
-			<th scope="col">Học phí &#40;VND&#41;</th>
-			<th scope="col">Thời lượng khóa học &#40;tháng&#41;</th>
-			<th scope="col">Hiển thị ngoài trang chủ</th>
-			<th scope="col">Thao tác</th>
+			<th scope="col">ID</th>
+			<th scope="col">Name</th>
+			<th scope="col">Category</th>
+			<th scope="col">Teacher name</th>
+			<th scope="col">Course fee &#40;VND&#41;</th>
+			<th scope="col">Course duration &#40;month&#41;</th>
+			<th scope="col">Visibilty</th>
+			<th scope="col">Action</th>
 		</thead>
 		<tbody>
 			<?php foreach ($lineup as $item) : ?>
@@ -27,13 +27,13 @@
 					<td><?= number_format($item['price'], '0', ',', '.') ?></td>
 					<td><?= $item['duration'] ?></td>
 					<?php if ($item['status'] == 1) : ?>
-						<td>Có</td>
+						<td>Show</td>
 					<?php else : ?>
-						<td>Không</td>
+						<td>Hidden</td>
 					<?php endif; ?>
-					<td><a href="?request=editCourse&id=<?= $item['cID'] ?>" class="btn btn-primary">Sửa</a>
+					<td><a href="?request=editCourse&id=<?= $item['cID'] ?>" class="btn btn-primary">Edit</a>
 						<?php if (mysqli_num_rows(mysqli_query($conn, "select*from register where cID = '$item[cID]'")) == 0) : ?>
-							<a href="?request=deleteCourse&id=<?= $item['cID'] ?>" onclick="return confirm('Bạn có chắc muốn xóa khóa học này?')" class="btn btn-danger">Xóa</a>
+							<a href="?request=deleteCourse&id=<?= $item['cID'] ?>" onclick="return confirm('Are you sure you want to delete this course?')" class="btn btn-danger">Delete</a>
 						<?php endif; ?>
 					</td>
 				</tr>

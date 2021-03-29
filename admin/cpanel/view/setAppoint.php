@@ -11,18 +11,18 @@ if (isset($_GET['id'])) {
 <?php include "../cpanel/controller/sendappointment.php" ?>
 	<?php include "../cpanel/model/errorAppointment.php"?>
 <div class="appointment">
-	<h3>Đặt lịch hẹn</h3>
-	<p>Tên học viên: <?= $q['name'] ?></p>
-	<p>Khóa học đăng ký: <?= $q['cName'] ?></p>
+	<h3>Set a Schedule</h3>
+	<p>Student name: <?= $q['name'] ?></p>
+	<p>Registered course: <?= $q['cName'] ?></p>
 	<?php if ($q['date'] == "0000-00-00") : ?>
-		<p>Học viên hiện chưa được đặt lịch hẹn đến trung tâm</p>
-		<p>Nhập thời gian hẹn học viên đến trung tâm ở ô phía dưới, học viên sẽ nhận một email thông báo về thời gian họ cần đến trung tâm để hoàn tất hồ sơ</p>
+		<p>No schedule set for this registration</p>
+		<p>Enter a date below, students will receive an email inform them about the day they need to come to the centre</p>
 		<form method="post" class="form-inline">
 			<div class="form-group mx-sm-3 mb-2">
 				<input type="date" name="date" class="form-control" required>
 			</div>
-			<button type="submit" name='set' class="btn btn-primary mb-2">Đặt lịch</button> 
-			<a href="?request=appointment" class="btn btn-light mb-2">Trở về</a>
+			<button type="submit" name='set' class="btn btn-primary mb-2">Set</button> 
+			<a href="?request=appointment" class="btn btn-light mb-2">Go back</a>
 		</form>
 	<?php else : ?>
 		<p>Học viên hiện đã được đặt lịch hẹn đến trung tâm vào ngày <?= date('d', strtotime($q['date'])) ?> tháng <?= date('m', strtotime($q['date'])) ?> năm <?= date('Y', strtotime($q['date'])) ?></p>
@@ -31,8 +31,8 @@ if (isset($_GET['id'])) {
 			<div class="form-group mx-sm-3 mb-2">
 				<input type="date" name="date" class="form-control" required>
 			</div>
-			<button type="submit" name='change' class="btn btn-primary mb-2">Thay đổi lịch</button>
-			<a href="?request=appointment" class="btn btn-light mb-2">Trở về</a>
+			<button type="submit" name='change' class="btn btn-primary mb-2">Change</button>
+			<a href="?request=appointment" class="btn btn-light mb-2">Go back</a>
 		</form>
 	<?php endif; ?>
 </div>

@@ -1,51 +1,51 @@
 <?php include "../controller/courseregister.php" ?>
 
 <div class="register">
-	<h4>Bạn sẽ tham gia khóa học này!</h4>
-	<p>Vui lòng dành chút thời gian để điền một số thông tin dưới đây, và chúng tôi sẽ thông báo cho bạn thời gian cụ thể bạn cần đến trung tâm để hoàn tất hồ sơ đăng ký</p>
+	<h4>You're registering!</h4>
+	<p>Please take a few moment to fill out the form below. We will reach out to you to give you the time that you need to come to the centre of your choice to complete your registration</p>
 	<form method="POST" class="row g-3 needs-validation" novalidate>
 		<div class="col-md-4">
-			<label for="name" class="form-label">Họ và tên</label>
+			<label for="name" class="form-label">Your full name</label>
 			<input type="text" name="name" id="name" class="form-control" required="required">
-			<div class="invalid-feedback">Thông tin bắt buộc</div>
+			<div class="invalid-feedback">Required</div>
 		</div>
 		<div class="col-md-4">
-			<label for="email" class="form-label">Địa chỉ Email</label>
+			<label for="email" class="form-label">Your email address</label>
 			<input type="email" name="email" id="email" class="form-control" required="required">
-			<div class="invalid-feedback">Thông tin bắt buộc</div>
+			<div class="invalid-feedback">Required</div>
 		</div>
 		<div class="col-md-4">
-			<label for="name" class="form-label">Số điện thoại</label>
+			<label for="name" class="form-label">Your phone number</label>
 			<input type="text" name="phone" id="phone" class="form-control" required="required" pattern="0[0-9]+" maxlength="11">
-			<div class="invalid-feedback">Thông tin bắt buộc</div>
+			<div class="invalid-feedback">Required</div>
 		</div>
 		<div class="col-12">
-			<label for="address" class="form-label">Địa chỉ: </label>
+			<label for="address" class="form-label">Your home address</label>
 			<input type="text" name="address" id="address" class="form-control" required>
-			<div class="invalid-feedback">Thông tin bắt buộc</div>
+			<div class="invalid-feedback">Required</div>
 		</div>
 		<div class="col-12">
-			<label for="centre" class="form-label">Bạn sẽ tham gia khóa học tại cơ sở nào?</label>
+			<label for="centre" class="form-label">Which of our centre would you like to enroll to?</label>
 			<select name="centre" id="centre" class="form-control" required>
-				<option value="" hidden>Chọn một cơ sở...</option>
+				<option value="" hidden>Select a centre...</option>
 				<?php foreach($a as $cen):?>
 					<option value="<?=$cen['addID']?>"><?=$cen['address']?></option>
 				<?php endforeach;?>
 			</select>
-			<div class="invalid-feedback">Vui lòng chọn một trung tâm bạn muốn tham gia khóa học</div>
+			<div class="invalid-feedback">Please select a centre you would like to enroll to</div>
 		</div>
 		<div class="col-12">
-			<label for="ref" class="form-label">Bạn biết đến chúng tôi thông qua kênh truyền thông nào?</label>
+			<label for="ref" class="form-label">How do you know about us?</label>
 			<select name="ref" id="ref" required class="form-control">
-				<option value="" hidden>Chọn một kênh truyền thông...</option>
+				<option value="" hidden>Choose one...</option>
 				<option value="Facebook">Facebook</option>
-				<option value="Google">Tìm kiếm trên Google</option>
-				<option value="Kênh truyền thông khác">Khác</option>
+				<option value="Google">Google search</option>
+				<option value="Other media channel">Other</option>
 			</select>
-			<div class="invalid-feedback">Vui lòng chọn một kênh truyền thông</div>
+			<div class="invalid-feedback">Please choose one of the option above</div>
 		</div>
 		<div class="col-12">
-			<button type="submit" class="btn btn-primary" name="submit">Gửi đăng ký</button>
+			<button type="submit" class="btn btn-primary" name="submit">Send my registration</button>
 		</div>
 	</form>
 </div>

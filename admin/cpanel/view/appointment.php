@@ -8,21 +8,21 @@
 	<?php unset($_SESSION['changed'])?>
 <?php endif;?>
 <div class="appointment">
-	<h3>Đặt lịch hẹn cho học viên</h3>
+	<h3>Registration Scheduling</h3>
 	<table class="table table-bordered">
 		<thead class="thead-light">
 			<tr>
-				<th scope="col">Mã đăng ký</th>
-				<th scope="col">Họ và tên</th>
+				<th scope="col">Register ID</th>
+				<th scope="col">Student Name</th>
 				<th scope="col">Email</th>
-				<th scope="col">SĐT Học viên</th>
-				<th scope="col">Khóa học đăng ký</th>
-				<th scope="col">Địa chỉ học viên</th>
-				<th scope="col">Cơ sở đăng ký</th>
-				<th scope="col">Kênh truyền thông</th>
-				<th scope="col">Ngày đăng ký</th>
-				<th scope="col">Lịch hẹn</th>
-				<th scope="col">Thao tác</th>
+				<th scope="col">Phone #</th>
+				<th scope="col">Registered Course</th>
+				<th scope="col">Student Address</th>
+				<th scope="col">Centre Enrolled</th>
+				<th scope="col">Referral</th>
+				<th scope="col">Register Date</th>
+				<th scope="col">Scheduled on</th>
+				<th scope="col">Action</th>
 			</tr>
 			<tbody>
 				<?php foreach($ap as $item):?>
@@ -37,16 +37,16 @@
 						<td><?=$item['ref']?></td>
 						<td><?=date_format(date_create($item['regDate']),"d/m/Y")?></td>
 						<?php if($item['date'] == "0000-00-00"):?>
-							<td>Chưa đặt lịch hẹn</td>
+							<td>No schedule set</td>
 							<?php else:?>
 							<td><?=date_format(date_create($item['date']),"d/m/Y")?></td>
 						<?php endif;?>
 						<?php if($item['date'] == "0000-00-00"):?>
-							<td><a href="?request=setAppoint&id=<?=$item['id']?>" class="btn btn-primary">Đặt lịch hẹn</a></td>
+							<td><a href="?request=setAppoint&id=<?=$item['id']?>" class="btn btn-primary">Set Schedule</a></td>
 							<?php elseif(strtotime($item['date']) === strtotime(date("Y-m-d"))):?>
 								<td>&nbsp;</td>
 							<?php else:?>
-							<td><a href="?request=changeAppoint&id=<?=$item['id']?>" class="btn btn-primary">Thay đổi lịch hẹn</a></td>
+							<td><a href="?request=changeAppoint&id=<?=$item['id']?>" class="btn btn-primary">Update Schedule</a></td>
 						<?php endif;?>
 					</tr>
 				<?php endforeach;?>

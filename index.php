@@ -10,7 +10,7 @@ $c = mysqli_query($conn, "select distinct a.catID, catName from course a join ca
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Excellent Coaching Vietnam</title>
+    <title>Excellent Coaching</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
@@ -21,7 +21,7 @@ $c = mysqli_query($conn, "select distinct a.catID, catName from course a join ca
     var xmlhttp;
     function getSearch(a){
       xmlhttp=GetXmlHttpObject();
-      null==xmlhttp?alert("Trình duyệt không hỗ trợ HTTP Request"):(xmlhttp.onreadystatechange=stateChanged,xmlhttp.open("GET","getData.php?key="+a,!0),xmlhttp.send(null))
+      null==xmlhttp?alert("Browsers does not support HHTP request"):(xmlhttp.onreadystatechange=stateChanged,xmlhttp.open("GET","getData.php?key="+a,!0),xmlhttp.send(null))
     }
     function stateChanged(){
       4==xmlhttp.readyState&&(document.getElementById("result").innerHTML=xmlhttp.responseText)

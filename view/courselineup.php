@@ -13,7 +13,7 @@
 				</div>
 			</li>
 		<?php endwhile; ?>
-		<li class="list-group-item large"><a href="../pricelist" class="row_text">Bảng giá học phí các khóa học</a></li>
+		<li class="list-group-item large"><a href="../pricelist" class="row_text">Price list of our course</a></li>
 	</ul>
 </div>
 <script>src="https://code.jquery.com/jquery-3.6.0.js"</script>

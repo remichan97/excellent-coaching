@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title><?= $d['cName'] ?> - Excellent Coaching Vietnam</title>
+	<title><?= $d['cName'] ?> - Excellent Coaching</title>
 	<link rel="stylesheet" href="../assets/subsite/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/subsite/fonts/ionicons.min.css">
 	<link rel="stylesheet" href="../assets/subsite/css/Contact-Form-Clean.css">
@@ -31,7 +31,7 @@
 						<h1><?= $d['cName'] ?></h1>
 					</div>
 					<div class="col_3">
-						<h4>Giảng viên: <?=$d['name']?></h4>
+						<h4>Teacher: <?=$d['name']?></h4>
 					</div>
 					<section class="description_form">
 						<div class="col_9">
@@ -40,9 +40,9 @@
 						<div class="col_3">
 							<div class="list_lecturers">
 								<ul class="top_list">
-									<li>Thời lượng khóa học: <?= $d['duration'] ?> tháng</li>
-									<li>Học phí: <?= number_format($d['price'], 0, ',', '.') ?> đồng</li>
-									<button onclick="window.print()" class="btn btn-primary" style="margin-top: 2rem;">Lưu thông tin</button>
+									<li>Course duration: <?= $d['duration'] ?> month</li>
+									<li>Course fee: <?= number_format($d['price'], 0, ',', '.') ?> VND</li>
+									<button onclick="window.print()" class="btn btn-primary" style="margin-top: 2rem;">Save this page</button>
 								</ul>
 							</div>
 						</div>

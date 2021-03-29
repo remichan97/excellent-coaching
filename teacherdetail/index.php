@@ -18,7 +18,7 @@ if (isset($_GET['teacherid'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Thông tin giảng viên - Excellent Coaching Vietnam</title>
+    <title>Teacher Information - Excellent Coaching</title>
     <link rel="stylesheet" href="../assets/teacher/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/teacher/fonts/ionicons.min.css">
     <link rel="stylesheet" href="../assets/teacher/css/description.css">
@@ -36,10 +36,10 @@ if (isset($_GET['teacherid'])) {
             <div class="content_academy_inner top">
                 <header class="title_form">
                     <div class="col_9 layer">
-                        <h1>Giảng viên <?=$td['name']?></h1>
+                        <h1><?=$td['name']?></h1>
                     </div>
                     <div class="col_3">
-                        <h4>Chuyên ngành: <?=$td['profession']?></h4>
+                        <h4>Best Field: <?=$td['profession']?></h4>
                     </div>
                     <section class="description_form">
                         <div class="col_9">
@@ -48,7 +48,7 @@ if (isset($_GET['teacherid'])) {
                         <div class="col_3 layer">
                             <div class="list_lecturers">
                                 <ul class="top_list">
-                                    <li>Các khóa học mà giảng viên hiện đang đào tạo</li>
+                                    <li>Currently teaching courses</li>
 									<?php foreach($course as $item):?>
 										<li><a href="../courses?courseID=<?=$item['cID']?>"><?=$item['cName']?></a></li>
 									<?php endforeach;?>
@@ -62,7 +62,7 @@ if (isset($_GET['teacherid'])) {
         <div class="content_academy_wrap">
             <div class="content_academy_inner">
                 <section class="header_title">
-                    <h1>Các giảng viên khác của EC</h1>
+                    <h1>Other Teachers at Excellent Coaching</h1>
                 </section>
 					<?php include "../view/otherTeacherView.php"?>
             </div>

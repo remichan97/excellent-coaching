@@ -1,5 +1,4 @@
 <?php
-	include "../cpanel/model/database.php";
 	if (isset($_POST['send'])) {
 		$_SESSION['replymsg'] = $_POST;
 		$email = $_POST['email'];
@@ -21,7 +20,6 @@
 			$_SESSION['failed'] = true;
 			header("Location: ". $_SERVER['REQUEST_URI']);
 		}
-		
 	}
 	exit();
 ?>

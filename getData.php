@@ -9,7 +9,7 @@
       $result.="<p><a href='../courses?courseID=$item[cID]'>".$item['cName']."</a></p>";
     }
   }else{
-    $result.="<p>Không tìm thấy khóa học dựa trên từ khóa đã nhập<p>";
+    $result.="<p>No courses found for the keyword you typed in<p>";
   }
   echo $result;
 ?>

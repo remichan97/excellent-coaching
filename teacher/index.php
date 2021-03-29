@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title>Hệ thống giảng viên - Excellent Coaching Vietnam</title>
+	<title>Our Teachers - Excellent Coaching</title>
 	<link rel="stylesheet" href="../assets/teacher/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/teacher/fonts/ionicons.min.css">
 	<link rel="stylesheet" href="../assets/teacher/css/Footer-Basic.css">
@@ -21,7 +21,7 @@
 		<div class="content_academy_wrap">
 			<div class="content_academy_inner">
 				<section class="header_title">
-					<h1>Hệ thống giảng viên của Excellent Coaching Vietnam</h1>
+					<h1>Our Teachers at Excellent Coaching</h1>
 				</section>
 				<?php include "../view/teacherView.php"?>
 			</div>

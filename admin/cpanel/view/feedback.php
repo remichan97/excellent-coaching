@@ -5,27 +5,27 @@ $fb = mysqli_query($conn, $f);
 ?>
 
 <div class="feedback">
-	<h3>Phản hồi khách hàng</h3>
+	<h3>Customer Messages</h3>
 	<?php if (isset($_SESSION['sent']) && $_SESSION['sent'] == true) : //thông báo thành công cho người dùng
 	?>
-		<div class="alert alert-success">Phản hồi của bạn đã được gửi thành công!</div>
+		<div class="alert alert-success">Your response has been sent!</div>
 		<?php unset($_SESSION['sent']) //và sau đó quên luôn là nó đã từng xảy ra
 		?>
 		<?php elseif(isset($_SESSION['feedbackDeleted']) && $_SESSION['feedbackDeleted'] == true):?>
-		<div class="alert alert-success">Đã xóa phản hồi!</div>
+		<div class="alert alert-success">Deleted message!</div>
 		<?php unset($_SESSION['feedbackDeleted']) //và sau đó quên luôn là nó đã từng xảy ra
 		?>
 	<?php endif; ?>
 	<table class="table table-bordered">
 		<thead class="thead-light">
 			<tr>
-				<th scope="col">STT</th>
+				<th scope="col">ID</th>
 				<th scope="col">Email</th>
-				<th scope="col">Ngày gửi</th>
-				<th scope="col">Tiêu đề</th>
-				<th scope="col">Nội dung</th>
-				<th scopr="col">Trạng thái</th>
-				<th scope="col">Phản hồi</th>
+				<th scope="col">Date sent</th>
+				<th scope="col">Subject</th>
+				<th scope="col">Messageg</th>
+				<th scopr="col">Status</th>
+				<th scope="col">Response</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -37,16 +37,16 @@ $fb = mysqli_query($conn, $f);
 					<td><?= $item['subject'] ?></td>
 					<td><?= $item['body'] ?></td>
 					<?php if ($item['response'] == 0) : ?>
-						<td>Chưa phản hồi</td>
+						<td>Not responded</td>
 					<?php else : ?>
-						<td>Đã phản hồi khách hàng</td>
+						<td>Responded</td>
 					<?php endif; ?>
 					<?php if ($item['response'] == 0) : ?>
-						<td><a href="?request=reply&id=<?= $item['id'] ?>" class="btn btn-primary">Trả lời</a>
-							<a href="?request=deleteFeedback&feedbackid=<?= $item['id'] ?>" onclick="return confirm('Bạn có chắc muốn xóa phản hồi này?')" class="btn btn-danger">Xóa</a>
+						<td><a href="?request=reply&id=<?= $item['id'] ?>" class="btn btn-primary">Reply</a>
+							<a href="?request=deleteFeedback&feedbackid=<?= $item['id'] ?>" onclick="return confirm('Do you want to delete this message?')" class="btn btn-danger">Delete</a>
 						</td>
 					<?php else : ?>
-						<td> <a href="?request=deleteFeedback&feedbackid=<?= $item['id'] ?>" onclick="return confirm('Bạn có chắc muốn xóa phản hồi này?')" class="btn btn-danger">Xóa</a></td>
+						<td> <a href="?request=deleteFeedback&feedbackid=<?= $item['id'] ?>" onclick="return confirm('Do you want to delete this message?')" class="btn btn-danger">Delete</a></td>
 					<?php endif; ?>
 				</tr>
 			<?php endforeach; ?>

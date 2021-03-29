@@ -6,27 +6,27 @@
 	<div class="content_academy_inner">
 		<div class="contact">
 			<?php include "./view/contactstatus.php"?>
-			<h2>Bạn đang liên hệ với chúng tôi!</h2>
-			<p>Bạn có thắc mắc cần được giải đáp, hoặc có đề xuất cho chúng tôi? Hãy cho chúng tôi biết ý kiến của bạn thông qua biểu mẫu dưới đây!</p>
+			<h2>You're reaching out to us!</h2>
+			<p>Do you have a question? Or is there something you'd like to share with us? Please don't hesitate to contact us using the form below!</p>
 			<form method="POST" class="needs-validation" novalidate>
 				<div class="form-row">
 					<div class="form-group col-md-6">
-					<label for="email">Email của bạn:</label>
+					<label for="email">Your email address</label>
 					<input type="text" id="email" name="email" required="required" class="form-control" required>
-					<div class="invalid-feedback">Vui lòng điền email của bạn</div>
+					<div class="invalid-feedback" style="font-weight: bold;">Required</div>
 					</div>
 					<div class="form-group col-md-6">
-					<label for="subject">Tiêu đề:</label>
+					<label for="subject">Subject</label>
 					<input type="text" id="subject" name="subject" required="required" class="form-control" required>
-					<div class="invalid-feedback">Vui lòng điền tiêu đề tin nhắn</div>
+					<div class="invalid-feedback" style="font-weight: bold;">A message subject helps us understand you better!</div>
 					</div>
 					<div class="form-group col-md">
-					<label for="body">Nội dung tin nhắn:</label>
+					<label for="body">Your message</label>
 					<textarea name="body" id="body" class="form-control" cols="30" rows="10" required></textarea>
-					<div class="invalid-feedback">Vui lòng điền nội dung tin nhắn</div>
+					<div class="invalid-feedback" style="font-weight: bold;">Please type in your message</div>
 					</div>
 				</div>
-				<button type="submit" class="btn btn-primary" name='sendmsg'>Gửi phản hồi</button>
+				<button type="submit" class="btn btn-primary" name='sendmsg'>Send my message</button>
 			</form>
 		</div>
 	</div>

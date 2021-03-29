@@ -1,10 +1,10 @@
 <?php if (isset($_SESSION['sent']) && $_SESSION['sent'] == true) : ?>
-	<p class="alert alert-success">Cảm ơn bạn đã liên hệ với chúng tôi, chúng tôi sẽ trả lời phản hồi của bạn trong thời gian sớm nhất.</p>
+	<p class="alert alert-success">Thank you for your message! We will reach back to you soon!</p>
 	<?php unset($_SESSION['sent']) ?>
 <?php elseif (isset($_SESSION['failed']) && $_SESSION['failed'] == true) : ?>
-	<p class="alert alert-danger">Rất tiếc, đã có lỗi xảy ra, vui lòng thử lại trong ít phút nữa</p>
+	<p class="alert alert-danger">Sorry, something went wrong, please try again later.</p>
 	<?php unset($_SESSION['failed']) ?>
 <?php elseif (isset($_SESSION['invalidemail']) && $_SESSION['invalidemail'] == true) : ?>
-	<p class="alert alert-warning">Email nhập vào không hợp lệ, vui lòng kiểm tra lại!</p>
+	<p class="alert alert-warning">Invalid email address! Please check and try again</p>
 	<?php unset($_SESSION['invalidemail']) ?>
 <?php endif; ?>
