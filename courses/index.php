@@ -1,6 +1,7 @@
 <?php session_start() ?>
 <?php include "../model/database.php" ?>
 <?php include "../controller/showinfo.php" ?>
+<?php include "../controller/courseregister.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +36,7 @@
 					</div>
 					<section class="description_form">
 						<div class="col_9">
-							<?= $d['description'] ?>
+							<?=$d['description']?>
 						</div>
 						<div class="col_3">
 							<div class="list_lecturers">

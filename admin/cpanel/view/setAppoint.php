@@ -25,8 +25,8 @@ if (isset($_GET['id'])) {
 			<a href="?request=appointment" class="btn btn-light mb-2">Go back</a>
 		</form>
 	<?php else : ?>
-		<p>Học viên hiện đã được đặt lịch hẹn đến trung tâm vào ngày <?= date('d', strtotime($q['date'])) ?> tháng <?= date('m', strtotime($q['date'])) ?> năm <?= date('Y', strtotime($q['date'])) ?></p>
-		<p>Nhập thời gian thay đổi lịch hẹn học viên đến trung tâm ở ô phía dưới, học viên sẽ nhận một email thông báo về việc thay đổi thời gian họ cần đến trung tâm để hoàn tất hồ sơ</p>
+		<p>Currently student has been schedule to visit the centre on <?= date('d', strtotime($q['date'])) ?>/<?= date('m', strtotime($q['date'])) ?>/<?= date('Y', strtotime($q['date'])) ?></p>
+		<p>Enter the new date in which you want to change the student appointment. They will receive an email notifying them about the change</p>
 		<form method="post" class="form-inline">
 			<div class="form-group mx-sm-3 mb-2">
 				<input type="date" name="date" class="form-control" required>

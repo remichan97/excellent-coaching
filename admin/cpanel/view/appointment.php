@@ -1,10 +1,10 @@
 <?php include "../cpanel/controller/apquery.php"?>
 
 <?php if(isset($_SESSION['invited']) && $_SESSION['invited'] == true):?>
-	<div class="alert alert-success">Đã gửi lịch hẹn cho học viên thành công!</div>
+	<div class="alert alert-success">Apointment Sent!</div>
 	<?php unset($_SESSION['invited'])?>
 	<?php elseif(isset($_SESSION['changed']) && $_SESSION['changed'] == true):?>
-	<div class="alert alert-success">Đã thay đổi lịch hẹn cho học viên thành công!</div>
+	<div class="alert alert-success">Appointment changed!</div>
 	<?php unset($_SESSION['changed'])?>
 <?php endif;?>
 <div class="appointment">

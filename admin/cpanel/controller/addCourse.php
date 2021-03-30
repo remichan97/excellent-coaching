@@ -14,6 +14,7 @@
 			$duration = $_POST['duration'];
 			$status = $_POST['status'];
 			$description = $_POST['description'];
+			$description = trim($description);
 			$add = "insert into course (catID,cName,tID,price,duration,status,description) values ('$category','$name','$teacher','$price','$duration',$status,'$description')";
 			mysqli_query($conn,$add);
 			unset($_SESSION['addCourse']);
