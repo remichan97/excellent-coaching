@@ -18,12 +18,12 @@
 			$m = date('m',$datetime);
 			$y = date('Y',$datetime);
 			$email = $q['email'];
-			$subject = "Hẹn học viên đến hoàn tất hồ sơ đăng ký khóa học";
+			$subject = "Completing the Course Registration";
 			$subject = '=?utf-8?B?'.base64_encode($subject).'?=';
 			$body = "Dear ".$q['name'].",\n";
-			$body .= "Cảm ơn bạn đã đăng ký tham gia khóa học ".$q['cName']."!\n";
-			$body .= "Để hoàn tất hồ sơ đăng ký khóa học, mời bạn đến cơ sở ".$q['address']." của Excellent Coaching Vietnam vào ngày ".$d. " tháng ".$m." năm ".$y."!\n" ;
-			$body .="\nVui lòng trả lời lại email này nếu bạn có thắc mắc cần được giảỉ đáp.\n";
+			$body .= "Thank you for choosing the course ".$q['cName']."!\n";
+			$body .= "In order to complete your registration, please come to the Centre: ".$q['address']." of Excellent Coaching on ".$d. "/".$m."/".$y."!\n" ;
+			$body .="\nPlease reply this email if you have any additional inquiry.\n";
 			$header = array(
 				"From: Excellent Coaching Vietnam <excellentcoachingvn@gmail.com>", //phải có nếu không mớ phía dưới không gửi được mail
 				"Content-Type: text/plain;charset=utf-8" //phải có nếu không email client (Outlook, Thunderbird..) sẽ không hiển thị được tiếng Việt
@@ -59,13 +59,13 @@
 			$m = date('m',$datetime);
 			$y = date('Y',$datetime);
 			$email = $q['email'];
-			$subject = "Thay đổi thời gian học viên đến hoàn tất hồ sơ đăng ký khóa học";
+			$subject = "Changing schedule for course registration completing";
 			$subject = '=?utf-8?B?'.base64_encode($subject).'?=';
 			$body = "Dear ".$q['name'].",\n";
-			$body .= "Cảm ơn bạn đã đăng ký tham gia khóa học ".$q['cName']."!\n";
-			$body .= "Vì một số lý do ngoài mong muốn, nên để hoàn tất hồ sơ đăng ký khóa học, mời bạn đến cơ sở".$q['address']." của Excellent Coaching Vietnam vào ngày ".$d. " tháng ".$m." năm ".$y."\n" ;
-			$body .= "\nChúng tôi xin lỗi vì sự bất tiện này.";
-			$body .="\nVui lòng trả lời lại email này nếu bạn có thắc mắc cần được giảỉ đáp.\n";
+			$body .= "Thank you for choosing our course ".$q['cName']."!\n";
+			$body .= "Due to some certain circumstances, in order to complete your course registraion, please come to the Centre".$q['address']." of Excellent Coaching on ".$d. "/".$m."/".$y."\n" ;
+			$body .= "\nWe apologise for the inconvenience.";
+			$body .="\nPlease reply to this email if you have any additional inquiry.\n";
 			$header = array(
 				"From: Excellent Coaching Vietnam <excellentcoachingvn@gmail.com>", //phải có nếu không mớ phía dưới không gửi được mail
 				"Content-Type: text/plain;charset=utf-8" //phải có nếu không email client (Outlook, Thunderbird..) sẽ không hiển thị được tiếng Việt
