@@ -13,7 +13,7 @@
 				$body.="\nYou know about us via ".$ref."\r\n";
 				$body.="\nWi will inform you about the day you need to visit the centre of choice to complete your registration as soon as possible!\n";
 				$header = array(
-					"From: Excellent Coaching Vietnam <excellentcoachingvn@gmail.com>", //phải có nếu không mớ phía dưới không gửi được mail
+					"From: Excellent Coaching <excellentcoachingvn@gmail.com>", //phải có nếu không mớ phía dưới không gửi được mail
 					"Content-Type: text/plain;charset=utf-8" //phải có nếu không email client (Outlook, Thunderbird..) sẽ không hiển thị được tiếng Việt
 				);
 				mail($email,$subject,$body,implode("\r\n",$header));

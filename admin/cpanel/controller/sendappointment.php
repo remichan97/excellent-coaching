@@ -63,11 +63,11 @@
 			$subject = '=?utf-8?B?'.base64_encode($subject).'?=';
 			$body = "Dear ".$q['name'].",\n";
 			$body .= "Thank you for choosing our course ".$q['cName']."!\n";
-			$body .= "Due to some certain circumstances, in order to complete your course registraion, please come to the Centre".$q['address']." of Excellent Coaching on ".$d. "/".$m."/".$y."\n" ;
+			$body .= "Due to some certain circumstances, in order to complete your course registraion, please come to the Centre ".$q['address']." of Excellent Coaching on ".$d. "/".$m."/".$y."\n" ;
 			$body .= "\nWe apologise for the inconvenience.";
 			$body .="\nPlease reply to this email if you have any additional inquiry.\n";
 			$header = array(
-				"From: Excellent Coaching Vietnam <excellentcoachingvn@gmail.com>", //phải có nếu không mớ phía dưới không gửi được mail
+				"From: Excellent Coaching <excellentcoachingvn@gmail.com>", //phải có nếu không mớ phía dưới không gửi được mail
 				"Content-Type: text/plain;charset=utf-8" //phải có nếu không email client (Outlook, Thunderbird..) sẽ không hiển thị được tiếng Việt
 			);
 			if (mail($email,$subject,$body,implode("\r\n",$header))) {
