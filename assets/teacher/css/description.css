@@ -1,0 +1,58 @@
+ul, li, div, p {
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.title_form:after, .title_form:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.col_9 {
+  width: 72.5%;
+  padding: 10px 0;
+  display: block;
+  float: left;
+  margin-right: 5%;
+}
+
+.col_3 {
+  padding: 10px 0;
+  width: 22.5%;
+  float: left;
+  display: block;
+}
+
+.description_form:after, .description_form:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.list_lecturers {
+  padding: 20px 0;
+}
+
+@media (max-width: 819px) {
+  .col_9, .col_3 {
+    width: 100% !important;
+  }
+}
+
+.layer {
+  background-color: #e6e6e6;
+}
+
+.top_list {
+  list-style: none;
+}
+
+.top_list {
+  padding-left: 1rem;
+}
+
+.top {
+  max-width: 1200px !important;
+}
+
